@@ -7,10 +7,10 @@ url: "http://martyncisneros.github.io"
 baseurl: ""
 
 # Name of website
-title: smaRtin | Code
+title: smaRtin
 
 # Short description of your site
-#description: Cisneros
+description: Data Science Blog
 
 # --- Navigation bar options --- #
 
@@ -84,12 +84,12 @@ excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: "-"
+#title-separator: "-"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Arizona"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
