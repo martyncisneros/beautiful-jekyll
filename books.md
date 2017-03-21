@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books - Martin
+title: Books
 ---
 
 Under Construction. Coming soon!
