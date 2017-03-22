@@ -15,7 +15,7 @@ Previously, I was the <strong>Director of Operations</strong> at <a href="https:
 
 <p class="about-text">
 <span class="fa fa-school about-icon"></span>
-I have a <strong>BS in Mechanical Engineering</strong> from <a href="https://barretthonors.asu.edu/" target="_blank">Arizona State University</a>. I spent a semester studying structural mechanics and control systems at <a href="http://www.ntu.edu.sg/Pages/home.aspx" target="_blank">Nanyang Technological University</a> in Singapore. I am currently applying for online <strong>MS in Data Science</strong> programs for fall 2017 matriculation. 
+I have a <strong>BS in Mechanical Engineering</strong> from <a href="https://barretthonors.asu.edu/" target="_blank">Arizona State University</a>. During my Junior year, I studied structural mechanics and control systems at <a href="http://www.ntu.edu.sg/Pages/home.aspx" target="_blank">Nanyang Technological University</a> in Singapore. I am currently applying for online <strong>MS in Data Science</strong> programs for fall 2017 matriculation. 
 </p>
 
 <p class="about-text">
