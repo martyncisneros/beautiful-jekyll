@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About me
+subtitle: ExploRing the data cosmos. 
+bigimg: /img/cosmos.jpg
 ---
 
 <div id="aboutme-section">
