@@ -33,6 +33,16 @@
             </a>
           </li>
           {% endif %}
+		{% if site.author.kaggle and site.footer-links-active.kaggle %}
+          <li>
+            <a href="https://kaggle.com/{{ site.author.kaggle }}" title="Kaggle">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-kaggle fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
 	  {% if site.author.reddit and site.footer-links-active.reddit %}
           <li>
             <a href="https://reddit.com/u/{{ site.author.reddit }}" title="Reddit">
