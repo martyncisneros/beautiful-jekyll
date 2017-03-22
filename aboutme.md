@@ -16,7 +16,7 @@ I have a <strong>BS in Mechanical Engineering</strong> from <a href="https://bar
 
 
 
-I am proficient in <strong>SQL</strong> and <strong>R</strong>, and developing profiency in <strong>Python</strong>. I have also developed an <strong>XML</strong> based execution rule-set to model insurance-hospital contracts- using X12-835/837 claim payment data to calculate expected reimbursement. I enjoy using data and statistical models to drive strategic thought and decision making. I will build out this site with projects very soon. For now, check out my work on <a href="https://www.kaggle.com/smartyn" target="_blank">Kaggle</a>!
+I am proficient in <strong>SQL</strong> and <strong>R</strong>, and developing profiency in <strong>Python</strong>. I enjoy using data and statistical models to drive strategic thought and decision making. I will build out this site with projects very soon. For now, check out my work on <a href="https://www.kaggle.com/smartyn" target="_blank">Kaggle</a>!
 
 My hobbies include hot yoga, basketball, anything sci-fi, behavioral psychology books, mining music in Spotify, watching water. 
 
