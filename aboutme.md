@@ -10,7 +10,7 @@ I am currently a <strong>Data Analyst</strong> at a boutique healthcare consulti
 
 I have a <strong>BS in Mechanical Engineering</strong> from <a href="https://barretthonors.asu.edu/" target="_blank">Arizona State University</a>. During my Junior year, I studied structural mechanics and control systems at <a href="http://www.ntu.edu.sg/Pages/home.aspx" target="_blank">Nanyang Technological University</a> in Singapore. I am currently applying for online <strong>MS in Data Science</strong> programs for fall 2017 matriculation. 
 
-I am proficient in <strong>SQL</strong> and <strong>R</strong>, and gaining experience in <strong>Python</strong>. I am obsessed with solving problems and delivering timely analysis to stakeholders. My priority is ensuring the learning process is continuous and decision making improves with each iteration. Check out my work on <a href="https://www.kaggle.com/smartyn" target="_blank">Kaggle</a>!
+I am proficient in <strong>SQL</strong> and <strong>R</strong>, and gaining experience in <strong>Python</strong>. I am obsessed with solving problems and delivering timely analysis to stakeholders. My priority is ensuring the learning process is continuous and decision making improves with each iteration.
 
 My hobbies include hot yoga, basketball, anything sci-fi, behavioral psychology books, mining music in Spotify, and watching water. 
 
