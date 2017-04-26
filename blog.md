@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Blog
 subtitle: ExploRing the data cosmos. 
 bigimg: /img/cosmos.jpg
 ---
