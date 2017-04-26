@@ -5,7 +5,7 @@ subtitle: Insured Rates Before and After the Affordable Care Act
 published: true
 ---
 
-* The Python code and data used for this post can be found <a href="https://nbviewer.jupyter.org/github/martyncisneros/visualizing_changes_insured_rates/blob/master/Healthcare%20Insurance%20Coverage.ipynb" target="_blank">here</a>.
+The Python code and data used for this post can be found <a href="https://nbviewer.jupyter.org/github/martyncisneros/visualizing_changes_insured_rates/blob/master/Healthcare%20Insurance%20Coverage.ipynb" target="_blank">here</a>.
 
 The Affordable Care Act (ACA) is the name for the health care reform law which addresses health insurance coverage, costs, and preventive care. The ACA was signed into law on March 23, 2010.
 
