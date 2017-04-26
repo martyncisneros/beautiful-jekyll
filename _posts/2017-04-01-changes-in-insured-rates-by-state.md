@@ -22,9 +22,9 @@ The Affordable Care Act increased the rate of citizens with health insurance cov
 
 ![alt text][logo]
 
-[logo]: https://github.com/martyncisneros/martyncisneros.github.io/blob/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
+[logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
 
-![Insured Rates Deltas by State](https://github.com/martyncisneros/martyncisneros.github.io/blob/master/img/insured-rates/insured-rates.png)
+![Insured Rates Deltas by State](https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png)
 
 A central goal of the ACA was to reduce the number of uninsured by increasing access to affordable coverage options through Medicaid and the Health Insurance Marketplace. On June 28, 2012, the U.S. Supreme Court issued its decision regarding the constitutionality of the individual mandate and state-level Medicaid expansion mandate. The ruling made the Medicaid expansion optional for states. Roughly <strong>25%</strong> of states with Medicaid expansion had higher insured rate increases than all states without Medicaid expansion.
 
