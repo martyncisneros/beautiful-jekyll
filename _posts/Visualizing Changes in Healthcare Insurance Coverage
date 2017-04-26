@@ -2,6 +2,7 @@
 layout: post
 title: Visualizing Changes in Healthcare Insurance Coverage (2010-2015)
 subtitle: Insured Rates Before and After the Affordable Care Act
+published: true
 ---
 
 * The Python code and data used for this post can be found <a href="https://nbviewer.jupyter.org/github/martyncisneros/visualizing_changes_insured_rates/blob/master/Healthcare%20Insurance%20Coverage.ipynb" target="_blank">here</a>.
@@ -12,9 +13,9 @@ In this analysis, I looked at data compiled by the US Department of Health and H
 
 The following questions were addressed:
 
-How has the Affordable Care Act changed the rate of citizens with health insurance coverage?
-Which states observed the greatest increase in their insured rate?
-Did those states expand Medicaid program coverage and/or implement a health insurance marketplace?
+-  How has the Affordable Care Act changed the rate of citizens with health insurance coverage?
+-  Which states observed the greatest increase in their insured rate?
+-  Did those states expand Medicaid program coverage and/or implement a health insurance marketplace?
 
 The Affordable Care Act increased the rate of citizens with health insurance coverage by an average of 5.43% across all states. The states with the greatest increase in their insured rate were Nevada, Oregon, California, Kentucky, New Mexico, and West Virginia.
 
