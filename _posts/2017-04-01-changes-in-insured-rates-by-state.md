@@ -2,7 +2,7 @@
 layout: post
 title: Visualizing Changes in Healthcare Insurance Coverage (2010-2015)
 subtitle: Insured Rates Before and After the Affordable Care Act
-bigimg: /img/insured-rates/aca4.jpg
+bigimg: /img/insured-rates/aca5.jpg
 published: true
 ---
 
