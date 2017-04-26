@@ -28,6 +28,8 @@ A central goal of the ACA was to reduce the number of uninsured by increasing ac
 
 Since there is no deadline for states to implement the Medicaid expansion, future decisions by those 19 states without Medicaid expansion programs will contribute to the continued reduction of their uninsured rates.
 
-[logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
+![alt text][logo3]
 
+[logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
 [logo2]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot.png "Medicaid Expansion Box Plot"
+[logo3]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/medicaid-expansion.png "Medicaid Expansion by State"
