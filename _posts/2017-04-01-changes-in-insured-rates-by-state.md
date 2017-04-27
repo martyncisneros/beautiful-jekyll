@@ -6,7 +6,7 @@ bigimg: /img/insured-rates/aca1.png
 published: true
 ---
 
-The Affordable Care Act (ACA) is the name for the 2010 health care reform law which addresses health insurance coverage, costs, and preventative care. On March 24th 2017, House Republican leaders pulled legislation to repeal the Affordable Care Act. In light of these recent developments, I wanted to dig into the ACA's impact on US health care thus far.
+The Affordable Care Act (ACA) is the name for the 2010 health care reform law which addressed health insurance coverage, costs, and preventative care. On March 24th 2017, House Republican leaders pulled legislation to repeal the Affordable Care Act. In light of these recent developments, I wanted to dig into the ACA's impact on US health care thus far.
 
 In part 1 of this analysis, I explore data compiled by the _US Department of Health and Human Services and US Census Bureau_. This dataset includes uninsured rates before and after the ACA, estimates of individuals covered by employer and marketplace healthcare plans, and enrollment in Medicare and Medicaid programs.
 
