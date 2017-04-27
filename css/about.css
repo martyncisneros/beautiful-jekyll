@@ -1,14 +1,14 @@
 #about-section {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .about-text {
   position: relative;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .about-icon {
-  font-size: 24px;
+  font-size: 30px;
   position: absolute;
   left: -40px;
   margin-top: 5px;
