@@ -26,6 +26,10 @@ A central goal of the ACA was to reduce the number of uninsured by increasing ac
 
 ![alt text][logo2]
 
+space 
+
+![alt text][logo4]
+
 On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid expansion optional for states. Since there is no deadline for states to implement the Medicaid expansion, future decisions by those 19 states without Medicaid expansion programs will contribute to the continued reduction of their uninsured rates.
 
 ![alt text][logo3]
@@ -33,3 +37,4 @@ On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid exp
 [logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
 [logo2]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot.png "Medicaid Expansion Box Plot"
 [logo3]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/medicaid_expansion.png "Medicaid Expansion by State"
+[logo4]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot2.png "Medicaid Expansion Box Plot"
