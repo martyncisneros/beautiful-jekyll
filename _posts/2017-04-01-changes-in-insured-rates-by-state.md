@@ -26,6 +26,16 @@ A central goal of the ACA was to reduce the number of uninsured by increasing ac
 
 ![alt text][logo2]
 
+Refundable tax credits were designed to help eligible individuals and families with low or moderate income afford health insurance purchased through the Health Insurance Marketplace, beginning in 2014. 
+
+< insert Average Tax Credit by State > 
+< insert Per Capita Marketplace Tax Credits (2016) by State >
+
+Disributions of Employer and Marketplace Coverage Per Capita by State.
+
+< insert Per Capita Employer Health Insurance Coverage (2015) by State >
+< insert Per Capita Marketplace Health Insurance Coverage (2016) by State >
+
 On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid expansion optional for states. Since there is no deadline for states to implement the Medicaid expansion, future decisions by those 19 states without Medicaid expansion programs will contribute to the continued reduction of their uninsured rates.
 
 ![alt text][logo3]
