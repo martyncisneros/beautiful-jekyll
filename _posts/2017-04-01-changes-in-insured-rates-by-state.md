@@ -22,11 +22,14 @@ The Affordable Care Act increased the rate of citizens with health insurance cov
 
 ![alt text][logo]
 
-A central goal of the ACA was to reduce the number of uninsured by increasing access to affordable coverage options through Medicaid expansion and the Health Insurance Marketplace. Roughly <strong>25%</strong> of states with Medicaid expansion had higher insured rate increases than <strong>all</strong> states without Medicaid expansion.
+A central goal of the ACA was to reduce the number of uninsured by increasing access to affordable coverage options through Medicaid expansion and the Health Insurance Marketplace. States with the greatest increase in their insured rate also expanded Medicaid programs. Roughly <strong>25%</strong> of states with Medicaid expansion had higher insured rate increases than <strong>all</strong> states without Medicaid expansion.
 
 ![alt text][logo2]
 
-Refundable tax credits were designed to help eligible individuals and families with low or moderate income afford health insurance purchased through the Health Insurance Marketplace, beginning in 2014. States that did not expand Medicaid instead show higher number of individuals covered through the Health Insurance Marketplace per capita and higher tax credits per capita. 
+Medicaid Enrollment Change Per 100,000 People (2013-2016)
+![alt text][logo6]
+
+Refundable tax credits were designed to help eligible individuals and families with low or moderate income afford health insurance purchased through the Health Insurance Marketplace, beginning in 2014. States that did not expand Medicaid instead show greater numbers of individuals covered through the Health Insurance Marketplace per capita and higher tax credits per capita. 
 
 Marketplace Tax Credits Per 100,000 People (2016)
 ![alt text][logo4]
@@ -34,14 +37,17 @@ Marketplace Tax Credits Per 100,000 People (2016)
 Number of Individuals Covered by the Insurance Marketplace Per 100,000 People (2016)
 ![alt text][logo5]
 
-On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid expansion optional for states. Since there is no deadline for states to implement the Medicaid expansion, future decisions by those 19 states without Medicaid expansion programs will contribute to the continued reduction of their uninsured rates.
+On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid expansion optional for states. There is no deadline for states to implement the Medicaid expansion. 
 
 ![alt text][logo3]
 
-In part 2 of this analysis, I will look at an extensive dataset on health and dental plans offered to individuals and small businesses through the US Health Insurance Marketplace. This data was originally prepared and released by the _Centers for Medicare & Medicaid Services (CMS)_.
+Future decisions by those 19 states without Medicaid expansion programs will contribute to the continued reduction of their uninsured rates along with continued funding of premium tax credits.
+
+In part 2 of this analysis, I will look at an extensive dataset on health and dental plans offered to individuals and small businesses through the US Health Insurance Marketplace with the hopes of sheding some light into how the ACA has effective healthcare costs. This data was originally prepared and released by the _Centers for Medicare & Medicaid Services (CMS)_.
 
 [logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
 [logo2]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot.png "Medicaid Expansion Box Plot"
 [logo3]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/medicaid_expansion.png "Medicaid Expansion by State"
 [logo4]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/tax-credits1.png "Tax Credits Per Capita by State"
 [logo5]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/marketplace2.png "Marketplace Insured Per Capita by State"
+[logo6]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/medicaid-expansion-scatter.png "Medicaid Expansion and Insured Rate"
