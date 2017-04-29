@@ -44,4 +44,4 @@ In part 2 of this analysis, I will look at an extensive dataset on health and de
 [logo2]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot.png "Medicaid Expansion Box Plot"
 [logo3]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/medicaid_expansion.png "Medicaid Expansion by State"
 [logo4]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/tax-credits1.png "Tax Credits Per Capita by State"
-[logo5]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/marketplace-insured1.png "Marketplace Insured Per Capita by State"
+[logo5]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/marketplace2.png "Marketplace Insured Per Capita by State"
