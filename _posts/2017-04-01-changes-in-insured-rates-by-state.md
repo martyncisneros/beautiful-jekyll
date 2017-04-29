@@ -41,7 +41,7 @@ On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid exp
 
 ![alt text][logo3]
 
-Future decisions by those 19 states without Medicaid expansion programs will contribute to the continued reduction of their uninsured rates along with continued funding of premium tax credits.
+Future decisions by those 19 states without Medicaid expansion programs and continued funding of premium tax credits will contribute to the continued reduction of their uninsured rates.
 
 In part 2 of this analysis, I will look at an dataset originally prepared and released by the _Centers for Medicare & Medicaid Services (CMS)_. This dataset includes extensive information on health and dental plans offered to individuals and small businesses through the Health Insurance Marketplace. I will look to shed some light into how the ACA has effective healthcare costs. 
 
