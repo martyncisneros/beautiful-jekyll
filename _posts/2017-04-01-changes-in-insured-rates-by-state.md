@@ -6,7 +6,7 @@ bigimg: /img/insured-rates/aca1.png
 published: true
 ---
 
-The Affordable Care Act (ACA) is the name for the 2010 health care reform law which addressed health insurance coverage, costs, and preventative care. On March 24th 2017, House Republican leaders pulled legislation to repeal the Affordable Care Act. In light of these recent developments, I wanted to dig into the ACA's impact on US health care thus far.
+The Affordable Care Act (ACA) is the name for the 2010 health care reform law which addressed health insurance coverage, costs, and preventative care. On March 24th 2017, House Republican leaders pulled legislation to repeal the Affordable Care Act. While a rewrite to the law appears to be on hold, the debate continues. In light of these recent developments, I wanted to dig into the ACA's impact on US health care thus far.
 
 In part 1 of this analysis, I explore data compiled by the _US Department of Health and Human Services and US Census Bureau_. This dataset includes uninsured rates before and after the ACA, estimates of individuals covered by employer and marketplace healthcare plans, and enrollment in Medicare and Medicaid programs.
 
@@ -22,19 +22,17 @@ The Affordable Care Act increased the rate of citizens with health insurance cov
 
 ![alt text][logo]
 
-A central goal of the ACA was to reduce the number of uninsured by increasing access to affordable coverage options through Medicaid and the Health Insurance Marketplace. Roughly <strong>25%</strong> of states with Medicaid expansion had higher insured rate increases than <strong>all</strong> states without Medicaid expansion.
+A central goal of the ACA was to reduce the number of uninsured by increasing access to affordable coverage options through Medicaid expansion and the Health Insurance Marketplace. Roughly <strong>25%</strong> of states with Medicaid expansion had higher insured rate increases than <strong>all</strong> states without Medicaid expansion.
 
 ![alt text][logo2]
 
-Refundable tax credits were designed to help eligible individuals and families with low or moderate income afford health insurance purchased through the Health Insurance Marketplace, beginning in 2014. 
+Refundable tax credits were designed to help eligible individuals and families with low or moderate income afford health insurance purchased through the Health Insurance Marketplace, beginning in 2014. States that did not expand Medicaid instead show higher number of individuals covered through the Health Insurance Marketplace per capita and higher tax credits per capita. 
 
-< insert Average Tax Credit by State > 
-< insert Per Capita Marketplace Tax Credits (2016) by State >
+Marketplace Tax Credits Per 100,000 People (2016)
+![alt text][logo4]
 
-Disributions of Employer and Marketplace Coverage Per Capita by State.
-
-< insert Per Capita Employer Health Insurance Coverage (2015) by State >
-< insert Per Capita Marketplace Health Insurance Coverage (2016) by State >
+Number of Individuals Covered by the Insurance Marketplace Per 100,000 People (2016)
+![alt text][logo5]
 
 On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid expansion optional for states. Since there is no deadline for states to implement the Medicaid expansion, future decisions by those 19 states without Medicaid expansion programs will contribute to the continued reduction of their uninsured rates.
 
@@ -45,3 +43,5 @@ In part 2 of this analysis, I will look at an extensive dataset on health and de
 [logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
 [logo2]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot.png "Medicaid Expansion Box Plot"
 [logo3]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/medicaid_expansion.png "Medicaid Expansion by State"
+[logo4]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/tax-credits1.png "Tax Credits Per Capita by State"
+[logo5]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/marketplace-insured1.png "Marketplace Insured Per Capita by State"
