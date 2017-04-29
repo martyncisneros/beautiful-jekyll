@@ -43,7 +43,7 @@ On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid exp
 
 Future decisions by those 19 states without Medicaid expansion programs and continued funding of premium tax credits will contribute to the continued reduction of their uninsured rates.
 
-In part 2 of this analysis, I will look at a dataset originally prepared and released by the _Centers for Medicare & Medicaid Services (CMS)_. This dataset includes extensive information on health and dental plans offered to individuals and small businesses through the Health Insurance Marketplace. I will look to shed some light into how the ACA has effective healthcare costs. 
+In part 2 of this analysis, I will look at a dataset originally prepared and released by the _Centers for Medicare & Medicaid Services (CMS)_. This dataset includes extensive information on health and dental plans offered to individuals and small businesses through the Health Insurance Marketplace. I will look to shed some light into how the ACA has affected healthcare costs. 
 
 [logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
 [logo2]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot.png "Medicaid Expansion Box Plot"
