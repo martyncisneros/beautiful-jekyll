@@ -24,7 +24,7 @@ The Affordable Care Act increased the rate of citizens with health insurance cov
 
 A central goal of the ACA was to reduce the number of uninsured by increasing access to affordable coverage options through Medicaid expansion and the Health Insurance Marketplace. States with the greatest increase in their insured rate also expanded Medicaid programs. Roughly <strong>25%</strong> of states with Medicaid expansion had higher insured rate increases than <strong>all</strong> states without Medicaid expansion.
 
-![alt text][logo2]
+![alt text][logo2](/img/insured-rates/box-plot.png =250x)
 
 Medicaid Enrollment Change Per 100,000 People (2013-2016)
 ![alt text][logo6]
