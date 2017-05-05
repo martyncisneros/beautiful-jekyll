@@ -18,7 +18,7 @@ The following questions were addressed:
 
 ** The Python code and data used for this post can be found <a href="https://nbviewer.jupyter.org/github/martyncisneros/visualizing_changes_insured_rates/blob/master/Healthcare%20Insurance%20Coverage.ipynb" target="_blank">here</a>.**
 
-The Affordable Care Act increased the rate of citizens with health insurance coverage by an <strong>average of 5.43% across all states</strong>. The states with the greatest increase in their insured rate were <strong>Nevada, Oregon, California, Kentucky, New Mexico, and West Virginia</strong>. As of 2015, there were an estimated <strong>$19.8 million</strong> individuals with healthcare coverage who were previously uninsured prior to the implementation of the ACA. 
+The Affordable Care Act increased the rate of citizens with health insurance coverage by an <strong>average of 5.43% across all states</strong>. The states with the greatest increase in their insured rate were <strong>Nevada, Oregon, California, Kentucky, New Mexico, and West Virginia</strong>. As of 2015, there were an estimated <strong>19.8 million</strong> individuals with healthcare coverage who were previously uninsured prior to the implementation of the ACA. 
 
 ![alt text][logo]
 
