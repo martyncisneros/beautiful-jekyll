@@ -18,7 +18,7 @@ The following questions were addressed:
 
 ** The Python code and data used for this post can be found <a href="https://nbviewer.jupyter.org/github/martyncisneros/visualizing_changes_insured_rates/blob/master/Healthcare%20Insurance%20Coverage.ipynb" target="_blank">here</a>.**
 
-The Affordable Care Act increased the rate of citizens with health insurance coverage by an <strong>average of 5.43% across all states</strong>. The states with the greatest increase in their insured rate were <strong>Nevada, Oregon, California, Kentucky, New Mexico, and West Virginia</strong>.
+The Affordable Care Act increased the rate of citizens with health insurance coverage by an <strong>average of 5.43% across all states</strong>. The states with the greatest increase in their insured rate were <strong>Nevada, Oregon, California, Kentucky, New Mexico, and West Virginia</strong>. As of 2015, there were <strong>$19.8 million</strong> newly insured individuals since the implementation of the ACA. 
 
 ![alt text][logo]
 
@@ -44,6 +44,9 @@ On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid exp
 Future decisions by those 19 states without Medicaid expansion programs and continued funding of premium tax credits will contribute to the continued reduction of their uninsured rates.
 
 In part 2 of this analysis, I will look at a dataset originally prepared and released by the _Centers for Medicare & Medicaid Services (CMS)_. This dataset includes extensive information on health and dental plans offered to individuals and small businesses through the Health Insurance Marketplace. I will look to shed some light into how the ACA has affected healthcare costs. 
+
+<strong>Update:</strong>
+<strong>May 4th, 2017: This post has been updated with the House passage of the American Health Care Act.</strong>
 
 [logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
 [logo2]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/box-plot.png "Medicaid Expansion Box Plot"
