@@ -46,6 +46,7 @@ Future decisions by those 19 states without Medicaid expansion programs and cont
 In part 2 of this analysis, I will look at a dataset originally prepared and released by the _Centers for Medicare & Medicaid Services (CMS)_. This dataset includes extensive information on health and dental plans offered to individuals and small businesses through the Health Insurance Marketplace. I will look to shed some light into how the ACA has affected healthcare costs. 
 
 <strong>Update:</strong>
+
 <strong>May 4th, 2017: This post has been updated with the House passage of the American Health Care Act.</strong>
 
 [logo]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/insured-rates.png "Insured Rates Deltas by State"
