@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualizing Changes in US Healthcare Insurance Coverage (Part I)
+title: Visualizing Changes in US Healthcare Insurance Coverage Using Python
 subtitle: Insured Rates Before and After the Affordable Care Act
 bigimg: /img/insured-rates/aca1.png
 published: true
