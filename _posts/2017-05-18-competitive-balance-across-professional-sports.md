@@ -23,6 +23,8 @@ With granular box score data, I was able to calculate the score differential at 
 
 **Comebacks**
 
+Comebacks are games where the winning team was down by some deficit at some point in the game. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
+
 Case 1: Team A is down by X points going into the final quarter and wins the game. 
 
 Case 2: Team A is down by X points going into the third quarter and wins the game. 
@@ -37,11 +39,15 @@ _X is the average deficit for losing teams going into the final quarter._
 | MLB    | 2 runs      |
 
 ![alt text][logo]
+Overall, there are very few games that fall into this category. 
 
 ![alt text][logo2]
+On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to eb made from this view. 
 
 
 **Close Games**
+
+Close games are those that are within some score differential, usually those 'competitive' games sports fans remember. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
 
 Case 1: The game is within Y points through each quarter and final score is within Y points (or game goes to OT). 
 
@@ -59,13 +65,18 @@ _Y points is the maximum scorable one one possession per sport._
 | MLB    | 1 run       |
 
 ![alt text][logo3]
+The NHL and NFL stand out in having **20-40%** of their games in the category where the game was within Y differential through each quarter and final score. Alternatively, the NBA produces less than **5%** of games in this category. 
 
 ![alt text][logo4]
+Again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 2. 
+
 
 ![alt text][logo5]
-
+And once again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 3. 
 
 **Blow Outs**
+
+Blow out games are those that are outside of some score differential, usually those 'non-competitive' and lopsided games sports fans hope to forget. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
 
 Case 1: The game score deficit is greater than Z points through each quarter and final score deficit is greater than Z points. 
 
@@ -85,7 +96,9 @@ _Z points is 3x the maximum scorable one one possession per sport._
 
 ![alt text][logo6]
 
+
 ![alt text][logo7]
+
 
 ![alt text][logo8]
 
