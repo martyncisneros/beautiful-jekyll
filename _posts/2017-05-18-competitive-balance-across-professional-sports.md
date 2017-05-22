@@ -109,12 +109,12 @@ Salary caps have been introduced over the last three decades in three of the fou
 
 Model Accuracy? 
 
-| League | CART | Random Forest | Log Regression |
-|--------|------|---------------|----------------|
-| NBA    |      |               |                |
-| NHL    |      |               |                |
-| NFL    |      |               |                |
-| MLB    |      |               |                |
+| League | CART | Random Forest | Logistic Regression |
+|--------|------|---------------|---------------------|
+| NBA    |      |               |                     |
+| NHL    |      |               |                     |
+| NFL    |      |               |                     |
+| MLB    |      |               |                     |
 
 ![alt text][logo14]
 
