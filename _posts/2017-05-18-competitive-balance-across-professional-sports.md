@@ -39,9 +39,11 @@ _X is the average deficit for losing teams going into the final quarter._
 | MLB    | 2 runs      |
 
 ![alt text][logo]
+
 Overall, there are very few games that fall into this category. 
 
 ![alt text][logo2]
+
 On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to eb made from this view. 
 
 
@@ -65,13 +67,16 @@ _Y points is the maximum scorable one one possession per sport._
 | MLB    | 1 run       |
 
 ![alt text][logo3]
+
 The NHL and NFL stand out in having **20-40%** of their games in the category where the game was within Y differential through each quarter and final score. Alternatively, the NBA produces less than **5%** of games in this category. 
 
 ![alt text][logo4]
+
 Again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 2. 
 
 
 ![alt text][logo5]
+
 And once again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 3. 
 
 **Blow Outs**
