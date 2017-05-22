@@ -9,7 +9,7 @@ This past February, the sports world witnessed one of the most improbable comeba
 
 Postseason drama in the form of improbable comebacks, close games, and the lack of drama through blowout games have brought about a question primed for a data-based answer, which professional sports league is the most competitive? 
 
-I define competiveness through the following variables: comebacks, close games, blowouts, and salary disparity across teams. In this analysis I will utilize an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by Stattleship, which provides historical game log data and game scores by quarter to address the following questions: 
+I define competiveness through the following variables: comebacks, close games, blowouts, and salary disparity across teams. In this analysis I will utilize an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, which provides historical game log data and game scores by quarter to address the following questions: 
 
 -  Which leagues are most likely to produce a comeback game? 
 -  Which leagues are most likely to produce a close game? 
