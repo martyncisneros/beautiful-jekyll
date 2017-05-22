@@ -5,7 +5,7 @@ subtitle: A look at Comebacks, Close Games, Blowouts, and Salary Cap Disparity
 published: false
 ---
 
-This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the sports world's biggest stage. The New England Patriots rallied from a 28-3 deficit to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with 18 overtime games. The National Basketball Association (NBA) playoffs have been underwhelming. In Game 2 of the Eastern Conference Finals, the Cleveland Cavaliers set a NBA playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41-point halftime</a> lead against the Boston Celtics. The postseason excitement and disappointments have brought about a question I was itching to answer, which professional sports league is the most competitive? 
+This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the sports world's biggest stage. The New England Patriots rallied from a 28-3 deficit to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with 18 overtime games. In Game 2 of the National Basketball Association (NBA) Eastern Conference Finals, the Cleveland Cavaliers set a playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41-point halftime</a> lead against the Boston Celtics. Postseason drama in the form of improbable comebacks, close games, and the lack of drama with blowout games have brought about a question I was itching to answer, which professional sports league is the most competitive? 
 
 To answer this question, I needed to expand on the following:
 
@@ -27,7 +27,7 @@ Case 1: Team A is down by X points going into the final quarter and wins the gam
 
 Case 2: Team A is down by X points going into the third quarter and wins the game. 
 
-_X points _
+_X is the average deficit for losing teams going into the final quarter._
 
 **Close Game**
 
@@ -54,8 +54,7 @@ _Z points is 3x the maximum scorable one one possession per sport._
 
 
 
-
-Salary caps have been introduced over the last three decades in three of the four major sports leagues in the United States: the National Basketball Association (NBA), the National Hockey League (NHL), and the National Football League (NFL). Major League Baseball is the only major sports league in the United States that does not have a salary cap; however, the MLB does have a luxury tax which is ...... 
+Salary caps have been introduced over the last three decades in three of the four leagues: NBA, NHL, and NFL. Major League Baseball is the only major sports league in the United States that does not have a salary cap; however, the MLB does have a luxury tax. 
 
 
 
