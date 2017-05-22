@@ -17,7 +17,7 @@ To answer this question, I needed to expand on the following:
 
 I came across an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a> powered by Stattleship. This API most importantly includes a team game logs endpoint which provides historical game logs with scores by quarter. With this granular box score data I was able to find the score deficits at each breakpoint for all regular season and playoff games since 2015. 
 
-**The exhaustive R code used for data wrangling and analysis can be found here for the <a href="" target="_blank">NBA</a>, <a href="" target="_blank">NHL</a>, <a href="" target="_blank">NFL</a>, and <a href="" target="_blank">MLB</a>.**
+** The R code used for data wrangling and analysis can be found here for the <a href="" target="_blank">NBA</a>, <a href="" target="_blank">NHL</a>, <a href="" target="_blank">NFL</a>, and <a href="" target="_blank">MLB</a>. **
 
 I will first cover the approach I took to define a comeback, close game, and blow out across all four leagues. 
 
