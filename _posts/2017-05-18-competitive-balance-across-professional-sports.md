@@ -70,6 +70,7 @@ _Z points is 3x the maximum scorable one one possession per sport._
 
 
 **Salary Cap**
+
 Salary caps have been introduced over the last three decades in three of the four leagues: NBA, NHL, and NFL. Major League Baseball is the only major sports league in the United States that does not have a salary cap; however, the MLB does have a luxury tax. 
 
 ![alt text][logo9]
