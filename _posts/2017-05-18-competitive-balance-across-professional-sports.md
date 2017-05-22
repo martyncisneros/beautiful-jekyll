@@ -29,6 +29,13 @@ Case 2: Team A is down by X points going into the third quarter and wins the gam
 
 _X is the average deficit for losing teams going into the final quarter._
 
+| League | X Threshold |
+|--------|-------------|
+| NBA    | 9 points    |
+| NHL    | 1 goal      |
+| NFL    | 9 points    |
+| MLB    | 2 runs      |
+
 ![alt text][logo]
 
 ![alt text][logo2]
@@ -43,6 +50,13 @@ Case 2: The game is within Y points going into the final quarter and final score
 Case 3: The final score is within Y points (or game goes to OT).
 
 _Y points is the maximum scorable one one possession per sport._ 
+
+| League | Y Threshold |
+|--------|-------------|
+| NBA    | 4 points    |
+| NHL    | 1 goal      |
+| NFL    | 8 points    |
+| MLB    | 1 run       |
 
 ![alt text][logo3]
 
@@ -60,6 +74,13 @@ Case 2: The game score deficit is greater than Z points going into the final qua
 Case 3: The final score deficit is greater than Z points.
 
 _Z points is 3x the maximum scorable one one possession per sport._ 
+
+| League | Z Threshold |
+|--------|-------------|
+| NBA    | 12 points   |
+| NHL    | 3 goals     |
+| NFL    | 24 points   |
+| MLB    | 3 runs      |
 
 
 ![alt text][logo6]
