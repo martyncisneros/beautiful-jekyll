@@ -21,7 +21,7 @@ I came across an expansive <a href="http://developers.stattleship.com/" target="
 
 I will first cover the approach I took to define a comeback, close game, and blow out across all four leagues. 
 
-**Comeback **
+**Comeback**
 
 Case 1: Team A is down by X points going into the final quarter and wins the game. 
 
@@ -29,7 +29,7 @@ Case 2: Team A is down by X points going into the third quarter and wins the gam
 
 _X points _
 
-**Close Game **
+**Close Game**
 
 Case 1: The game is within Y points through each quarter and final score is within Y points (or game goes to OT). 
 
@@ -39,7 +39,7 @@ Case 3: The final score is within Y points (or game goes to OT).
 
 _Y points is the maximum scorable one one possession per sport._ 
 
-**Blow Out **
+**Blow Out**
 
 Case 1: The game score deficit is greater than Z points through each quarter and final score deficit is greater than Z points. 
 
