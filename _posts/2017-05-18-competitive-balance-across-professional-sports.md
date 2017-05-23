@@ -109,7 +109,7 @@ NBA and MLB produce **20-30%** case 2 blowouts while the NFL and NHL produce les
 
 ![alt text][logo8]
 
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/BlowoutCase3.png" alt="alt text" width="640" height="427">
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase3.png" alt="alt text" width="640" height="427">
 
 The trend continues with case 3 blow outs. NBA and MLB have produced **30-40%** blow out games while the NFL and NHL have produced an average of **10%** blow out games. 
 
