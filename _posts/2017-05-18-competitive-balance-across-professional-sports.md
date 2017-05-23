@@ -110,20 +110,22 @@ NBA and MLB produce **20-30%** case 2 blowouts while the NFL and NHL produce les
 
 The trend continues with case 3 blow outs. NBA and MLB have produced **30-40%** blow out games while the NFL and NHL have produced an average of **10%** blow out games. 
 
+Blowout Average
+
+| League | Blowout Average |
+|--------|-----------------|
+| NBA    |                 |
+| NHL    |                 |
+| NFL    |                 |
+| MLB    |                 |
+
+
 **Salary Cap**
 
 Salary caps have been introduced over the last three decades in three of the four leagues: NBA, NHL, and NFL. Major League Baseball is the only major sports league in the United States that does not have a salary cap; however, the MLB does have a luxury tax. 
 
 
-![alt text][logo9]
 
-![alt text][logo10]
-
-![alt text][logo11]
-
-![alt text][logo12]
-
-![alt text][logo13]
 
 
 **Predictive Modeling**
@@ -148,21 +150,7 @@ Model Accuracy?
 | NFL    |      |               |                     |
 | MLB    |      |               |                     |
 
-![alt text][logo14]
 
-![alt text][logo15]
-
-![alt text][logo16]
-
-![alt text][logo17]
-
-![alt text][logo18]
-
-![alt text][logo19]
-
-![alt text][logo20]
-
-![alt text][logo21]
 
 
 **Conclusion**
@@ -186,7 +174,7 @@ NFL and NHL score as most competitive
 [logo5]: link "Close Game - Case 3"
 [logo6]: link "Blowout - Case 1"
 [logo7]: link "Blowout - Case 2"
-[logo8]: (https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/BlowOutCase3.png=640x427) "Blowout - Case 3"
+[logo8]: link "Blowout - Case 3"
 [logo9]: link "Salary Cap by League"
 [logo10]: link "NBA Salary v Wins"
 [logo11]: link "NHL Salary v Wins"
