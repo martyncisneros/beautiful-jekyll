@@ -187,7 +187,7 @@ NFL and NHL score as most competitive
 [logo5]: link "Close Game - Case 3"
 [logo6]: link "Blowout - Case 1"
 [logo7]: link "Blowout - Case 2"
-[logo8]: link "Blowout - Case 3"
+[logo8]: https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/BlowOutCase3.png "Blowout - Case 3"
 [logo9]: link "Salary Cap by League"
 [logo10]: link "NBA Salary v Wins"
 [logo11]: link "NHL Salary v Wins"
