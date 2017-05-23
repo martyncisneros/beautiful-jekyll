@@ -5,16 +5,16 @@ subtitle: A look at Comebacks, Close Games, Blowouts, and Salary Cap Disparity
 published: false
 ---
 
-This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most competitive playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. Sadly for basketball fans not tied to the Cleveland Cavaliers or Golden State Warriors, the subsequent finals matchup has been determinde through <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">salary caps and unrestricted free agency</a>. To make matters worse, in Game 2 of the National Basketball Association (NBA) Eastern Conference Finals, the Cavaliers set a playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41 point halftime</a> lead against the Boston Celtics. 
+This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most competitive playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. Sadly for basketball fans not tied to the Cleveland Cavaliers or Golden State Warriors, the NBA finals matchup has been determinde through <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">salary caps and unrestricted free agency</a>. To make matters worse, in Game 2 of the National Basketball Association (NBA) Eastern Conference Finals, the Cavaliers set a playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41 point halftime</a> lead against the Boston Celtics. 
 
 Postseason drama in the form of improbable comebacks, close games, and the lack of drama through blowout games have brought about a question primed for a data-based answer, which professional sports league is the most competitive? 
 
 I define competiveness through the following variables: comebacks, close games, blowouts, and salary disparity across teams. In this analysis I will utilize an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, which provides historical game log data and game scores by quarter to address the following questions: 
 
--  Which leagues are most likely to produce a comeback game? 
--  Which leagues are most likely to produce a close game? 
--  Which leagues are most likely to produce a blowout game? 
--  Which leagues have the most linear relationships between wins per season and team salary?
+-  Which league is most likely to produce a comeback game? 
+-  Which league is most likely to produce a close game? 
+-  Which league is most likely to produce a blowout game? 
+-  Which league has the most linear relationship between wins per season and team salary?
 -  Which league is the most predictable? 
 
 With granular box score data, I was able to calculate the score differential at each quarter/inning/intermission point for all regular season and playoff games since 2015. Using these running score differentials, I applied some logic to determine if a game falls into one of our categories. 
@@ -44,7 +44,7 @@ Overall, there are very few games that fall into this category.
 
 ![alt text][logo2]
 
-On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to eb made from this view. 
+On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to be made from this view. 
 
 
 **Close Games**
@@ -101,12 +101,15 @@ _Z points is 3x the maximum scorable one one possession per sport._
 
 ![alt text][logo6]
 
+NBA playoffs have produced just over **7.5%** case 1 blowouts, games over 12 points through each quarter. 
 
 ![alt text][logo7]
 
+NBA and MLB produce **20-30%** case 2 blowouts while the NFL and NHL produce less than **10%** blow out games of this type. 
 
 ![alt text][logo8]
 
+The trend continues with case 3 blow outs. NBA and MLB have produced **30-40%** blow out games while the NFL and NHL have produced an average of **10%** blow out games. 
 
 **Salary Cap**
 
