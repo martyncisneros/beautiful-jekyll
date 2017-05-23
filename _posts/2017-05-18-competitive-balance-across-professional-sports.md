@@ -38,11 +38,11 @@ _X is the average deficit for losing teams going into the final quarter._
 | NFL    | 9 points    |
 | MLB    | 2 runs      |
 
-![alt text][logo]
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
 
 Overall, there are very few games that fall into this category. 
 
-![alt text][logo2]
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase2.png" alt="alt text" width="640" height="427">
 
 On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to be made from this view. 
 
@@ -66,16 +66,15 @@ _Y points is the maximum scorable one one possession per sport._
 | NFL    | 8 points    |
 | MLB    | 1 run       |
 
-![alt text][logo3]
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase1.png" alt="alt text" width="640" height="427">
 
 The NHL and NFL stand out in having **20-40%** of their games in the category where the game was within Y differential through each quarter and final score. Alternatively, the NBA produces less than **5%** of games in this category. 
 
-![alt text][logo4]
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase2.png" alt="alt text" width="640" height="427">
 
 Again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 2. 
 
-
-![alt text][logo5]
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase3.png" alt="alt text" width="640" height="427">
 
 And once again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 3. 
 
@@ -99,15 +98,13 @@ _Z points is 3x the maximum scorable one one possession per sport._
 | MLB    | 3 runs      |
 
 
-![alt text][logo6]
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase1.png" alt="alt text" width="640" height="427">
 
 NBA playoffs have produced just over **7.5%** case 1 blowouts, games over 12 points through each quarter. 
 
-![alt text][logo7]
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase2.png" alt="alt text" width="640" height="427">
 
 NBA and MLB produce **20-30%** case 2 blowouts while the NFL and NHL produce less than **10%** blow out games of this type. 
-
-![alt text][logo8]
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase3.png" alt="alt text" width="640" height="427">
 
