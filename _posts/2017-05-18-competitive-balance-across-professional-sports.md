@@ -115,6 +115,7 @@ The trend continues with case 3 blow outs. NBA and MLB have produced **30-40%** 
 
 Salary caps have been introduced over the last three decades in three of the four leagues: NBA, NHL, and NFL. Major League Baseball is the only major sports league in the United States that does not have a salary cap; however, the MLB does have a luxury tax. 
 
+
 ![alt text][logo9]
 
 ![alt text][logo10]
