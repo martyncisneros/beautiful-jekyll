@@ -23,7 +23,7 @@ Equipped with granular box score data, I was able to calculate the score differe
 
 **Comebacks**
 
-Comebacks are games where the winning team was down by some deficit at some point in the game. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
+Comebacks are defined as games where a team is down by some point deficit and ultimately won the game. I will use the following 
 
 Case 1: Team A is down by X points going into the final quarter and wins the game. 
 
@@ -156,7 +156,9 @@ CART (Classification & Regression Trees)
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_closegames_tree.png" alt="alt text" width="640" height="427">
 ..commentary> 
 
+
 Random Forest
+
 
 
 Logistic Regression
