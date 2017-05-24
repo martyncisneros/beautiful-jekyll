@@ -29,11 +29,11 @@ _X is the average deficit for losing teams going into the final quarter._
 
 Case 1: Team A is down by X points going into the final quarter and wins the game. 
 
-IsComeback1 = 
+![](http://latex.codecogs.com/gif.latex?IsComebackCase1%20%3D%20%28IF%20%5C%2C%20DeltaQ3%20%5Cleq%20Threshold%20%5C%2C%20And%20%5C%2C%20DeltaFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
 Case 2: Team A is down by X points going into the third quarter and wins the game. 
 
-IsComeback2 = 
+![](http://latex.codecogs.com/gif.latex?IsComebackCase2%20%3D%20%28IF%20%5C%2C%20DeltaQ2%20%5Cleq%20Threshold%20%5C%2C%20And%20%5C%2C%20DeltaFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
 | League | X Threshold |
 |--------|-------------|
