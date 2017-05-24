@@ -25,11 +25,11 @@ Equipped with granular box score data, I was able to calculate the score differe
 
 Comebacks are defined as games where a team is down by some point deficit and ultimately won the game. I will use the following 
 
+_X is the average deficit for losing teams going into the final quarter._
+
 Case 1: Team A is down by X points going into the final quarter and wins the game. 
 
 Case 2: Team A is down by X points going into the third quarter and wins the game. 
-
-_X is the average deficit for losing teams going into the final quarter._
 
 | League | X Threshold |
 |--------|-------------|
@@ -51,13 +51,13 @@ On average, about **10%** of games across the leagues fall into a comeback categ
 
 Close games are those that are within some score differential, usually those 'competitive' games sports fans remember. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
 
+_Y points is the maximum scorable one one possession per sport._ 
+
 Case 1: The game is within Y points through each quarter and final score is within Y points (or game goes to OT). 
 
 Case 2: The game is within Y points going into the final quarter and final score is within Y points (or game goes to OT). 
 
 Case 3: The final score is within Y points (or game goes to OT).
-
-_Y points is the maximum scorable one one possession per sport._ 
 
 | League | Y Threshold |
 |--------|-------------|
@@ -82,13 +82,13 @@ And once again, we see NHL and NFL stand out as more likely to produce a comebac
 
 Blow out games are those that are outside of some score differential, usually those 'non-competitive' and lopsided games sports fans hope to forget. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
 
+_Z points is 3x the maximum scorable one one possession per sport._
+
 Case 1: The game score deficit is greater than Z points through each quarter and final score deficit is greater than Z points. 
 
 Case 2: The game score deficit is greater than Z points going into the final quarter and final score deficit is greater than Z points. 
 
-Case 3: The final score deficit is greater than Z points.
-
-_Z points is 3x the maximum scorable one one possession per sport._ 
+Case 3: The final score deficit is greater than Z points. 
 
 | League | Z Threshold |
 |--------|-------------|
@@ -114,7 +114,7 @@ Blowout Average
 
 | League | Blowout Average |
 |--------|-----------------|
-| NBA    |                 |
+| NBA    |  24.24          |
 | NHL    |                 |
 | NFL    |                 |
 | MLB    |                 |
