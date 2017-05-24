@@ -179,13 +179,20 @@ Model Accuracy?
 
 **Conclusion**
 
-NFL and NHL score as most competitive 
-
+To determine the most and least competitive leagues, I calculated a 'Competitive Index' using the results from the analysis. This index is essentially an average of all values. 
 
 ![](http://latex.codecogs.com/gif.latex?competitiveIndex%3D%5Cfrac%7BComebackRate&plus;CloseGameRate&plus;%281-BlowoutRate%29&plus;%281-SalaryWinCorrelation%29%7D%7B4%7D)
 
+competitiveIndex is a scale of 0 to 1. 1 being most competitive and 0 being least competitive. 
 
+| League | competitiveIndex |
+|--------|------------------|
+| NFL    | 0.59             |
+| NHL    | 0.46             |
+| MLB    | 0.36             |
+| NBA    | 0.34             |
 
+And there we have it, the NFL is the most competitive league while the NBA ranks last with a competitiveIndex of 0.34. 
 
 
 <strong>Update:</strong>
