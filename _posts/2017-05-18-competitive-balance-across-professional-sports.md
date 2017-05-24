@@ -46,6 +46,12 @@ Overall, there are very few games that fall into this category.
 
 On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to be made from this view. 
 
+| League | Comeback Rate |
+|--------|---------------|
+| NFL    | 8%            |
+| NBA    | 7.4%          |
+| MLB    | 7.1%          |
+| NHL    | 5.6%          |
 
 **Close Games**
 
@@ -76,7 +82,14 @@ Again, we see NHL and NFL stand out as more likely to produce a comeback game as
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase3.png" alt="alt text" width="640" height="427">
 
-And once again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 3. 
+And once again, we see NHL and NFL stand out as more likely to produce a close game as defined by case 3.
+
+| League | Close Game Rate |
+|--------|-----------------|
+| NHL    | 43.7%           |
+| NFL    | 35.6%           |
+| MLB    | 19.4%           |
+| NBA    | 12.5%           |
 
 **Blow Outs**
 
@@ -112,12 +125,12 @@ The trend continues with case 3 blow outs. NBA and MLB have produced **30-40%** 
 
 Blowout Average
 
-| League | Blowout Average |
-|--------|-----------------|
-| NBA    |     24.25%      |
-| NHL    |                 |
-| NFL    |     5.37%       |
-| MLB    |                 |
+| League | Blowout Rate |
+|--------|--------------|
+| NBA    | 24.2%        |
+| MLB    | 21.8%        |
+| NFL    | 5.4%         |
+| NHL    | 4.9%         |
 
 
 **Salary Cap**
