@@ -152,6 +152,12 @@ Salary caps have been introduced over the last three decades in three of the fou
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFLpayrollandwins.png" alt="alt text" width="640" height="427">
 ..commentary> 
 
+| League | SalaryWinCorrelation |
+|--------|----------------------|
+| MLB    | 0.6059618            |
+| NBA    | 0.6019024            |
+| NHL    | 0.6015134            |
+| NFL    | 0.03972376           |
 
 **Predictive Modeling**
 
