@@ -144,7 +144,17 @@ Salary caps have been introduced over the last three decades in three of the fou
 
 CART (Classification & Regression Trees) 
 
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_blowouts_tree.png" alt="alt text" width="640" height="427">
+..commentary> 
 
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLB_blowouts_tree.png" alt="alt text" width="640" height="427">
+..commentary> 
+
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_closegames_tree.png" alt="alt text" width="640" height="427">
+..commentary> 
+
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_closegames_tree.png" alt="alt text" width="640" height="427">
+..commentary> 
 
 Random Forest
 
@@ -177,30 +187,4 @@ NFL and NHL score as most competitive
 <strong>Update:</strong>
 
 <strong>May 31st, 2017: This post has been updated with the latest NBA and NHL playoff outcomes.</strong>
-
-
-[logo]: link "Comebacks - Case 1"
-[logo2]: link "Comebacks - Case 2"
-[logo3]: link "Close Game - Case 1"
-[logo4]: link "Close Game - Case 2"
-[logo5]: link "Close Game - Case 3"
-[logo6]: link "Blowout - Case 1"
-[logo7]: link "Blowout - Case 2"
-[logo8]: link "Blowout - Case 3"
-[logo9]: link "Salary Cap by League"
-[logo10]: link "NBA Salary v Wins"
-[logo11]: link "NHL Salary v Wins"
-[logo12]: link "NFL Salary v Wins"
-[logo13]: link "MLB Salary v Wins"
-[logo14]: link "NBA Decision Tree"
-[logo15]: link "NBA ROC Curve"
-[logo16]: link "NHL Decision Tree"
-[logo17]: link "NHL ROC Curve"
-[logo18]: link "NFL Decision Tree"
-[logo19]: link "NFL ROC Curve"
-[logo20]: link "MLB Decision Tree"
-[logo21]: link "MLB ROC Curve"
-
-
-
 
