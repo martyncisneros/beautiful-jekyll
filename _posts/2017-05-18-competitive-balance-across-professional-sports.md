@@ -155,12 +155,12 @@ Logistic Regression
 
 Model Accuracy? 
 
-| League | CART | Random Forest | Logistic Regression |
-|--------|------|---------------|---------------------|
-| NBA    |      |               |                     |
-| NHL    |      |               |                     |
-| NFL    |      |               |                     |
-| MLB    |      |               |                     |
+| League | Decision Tree | Random Forest | Logistic Regression |
+|--------|---------------|---------------|---------------------|
+| NBA    |               |               |                     |
+| NHL    |               |               |                     |
+| NFL    |               |               |                     |
+| MLB    |               |               |                     |
 
 
 
