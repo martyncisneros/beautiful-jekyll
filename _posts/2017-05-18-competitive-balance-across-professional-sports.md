@@ -44,12 +44,13 @@ IsComeback2 =
 
 Example Game: 
 
+
 | Game          | Team                 | Q1 | Q2 | Q3 | Q4 | OT | Final |
 |---------------|----------------------|----|----|----|----|----|-------|
 | Super Bowl 51 | New England Patriots | 0  | 3  | 6  | 19 | 6  | 34    |
 | Super Bowl 51 | Atlanta Falcons      | 0  | 21 | 7  | 0  | 0  | 28    |
 
-Delta's
+The game log data I used has two entries per game, 1 per team. I first calculate the differentials at the end of each quarter. 
 
 | Game          | Team                 | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |---------------|----------------------|---------|---------|---------|---------|------------|
