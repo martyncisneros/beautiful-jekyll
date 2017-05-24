@@ -5,6 +5,8 @@ subtitle: A look at Comebacks, Close Games, Blowouts, and Salary Cap Disparity
 published: false
 ---
 
+© 2013 Stadium Management Company, LLC.
+
 This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most competitive playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. Sadly for basketball fans not tied to the Cleveland Cavaliers or Golden State Warriors, the NBA finals matchup has been determined through <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">salary caps and unrestricted free agency</a>. To make matters worse, in Game 2 of the National Basketball Association (NBA) Eastern Conference Finals, the Cavaliers set a playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41 point halftime</a> lead against the Boston Celtics. 
 
 Postseason drama in the form of improbable comebacks, close games, and the lack of drama through blowout games triggered a question primed for a data-based answer, which professional sports league is the most competitive? 
