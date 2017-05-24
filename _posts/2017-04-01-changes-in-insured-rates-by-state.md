@@ -37,8 +37,6 @@ Marketplace Tax Credits Per 100,000 People (2016)
 Number of Individuals Covered by the Insurance Marketplace Per 100,000 People (2016)
 ![alt text][logo5]
 
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/insured-rates/marketplace2.png" alt="alt text" width="640" height="427">
-
 On June 28, 2012, the U.S. Supreme Court issued its decision making Medicaid expansion optional for states. There is no deadline for states to implement the Medicaid expansion. 
 
 ![alt text][logo3]
