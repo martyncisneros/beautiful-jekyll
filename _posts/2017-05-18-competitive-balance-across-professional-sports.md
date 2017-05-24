@@ -29,7 +29,11 @@ _X is the average deficit for losing teams going into the final quarter._
 
 Case 1: Team A is down by X points going into the final quarter and wins the game. 
 
+IsComeback1 = 
+
 Case 2: Team A is down by X points going into the third quarter and wins the game. 
+
+IsComeback2 = 
 
 | League | X Threshold |
 |--------|-------------|
@@ -37,6 +41,23 @@ Case 2: Team A is down by X points going into the third quarter and wins the gam
 | NHL    | 1 goal      |
 | NFL    | 9 points    |
 | MLB    | 2 runs      |
+
+Example Game: 
+
+| Game          | Team                 | Q1 | Q2 | Q3 | Q4 | OT | Final |
+|---------------|----------------------|----|----|----|----|----|-------|
+| Super Bowl 51 | New England Patriots | 0  | 3  | 6  | 19 | 6  | 34    |
+| Super Bowl 51 | Atlanta Falcons      | 0  | 21 | 7  | 0  | 0  | 28    |
+
+Delta's
+
+| Game          | Team                 | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
+|---------------|----------------------|---------|---------|---------|---------|------------|
+| Super Bowl 51 | New England Patriots | 0       | -18     | -19     | 0       | 6          |
+| Super Bowl 51 | Atlanta Falcons      | 0       | 18      | 19      | 0       | -6         |
+
+IsComebackCase1 = Yes
+IsComebackCase2 = Yes
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
 
@@ -71,6 +92,27 @@ Case 3: The final score is within Y points (or game goes to OT).
 | NHL    | 1 goal      |
 | NFL    | 8 points    |
 | MLB    | 1 run       |
+
+Example Game: 
+
+For our close game example, I chose the <a href="https://streamable.com/t7ac" target="_blank">epic back-n-forth NBA Finals Game 7</a> (aka the undercard to Game of Thrones' <a href="http://www.imdb.com/title/tt4283088/" target="_blank">Battle of the Bastards</a> which aired right after). 
+
+| Game                   | Team                  | Q1 | Q2 | Q3 | Q4 | Final |
+|------------------------|-----------------------|----|----|----|----|-------|
+| 2016 NBA Finals Game 7 | Golden State Warriors | 22 | 27 | 27 | 13 | 89    |
+| 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 23 | 19 | 33 | 18 | 93    |
+
+Delta's 
+
+| Game                   | Team                  | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
+|------------------------|-----------------------|---------|---------|---------|---------|------------|
+| 2016 NBA Finals Game 7 | Golden State Warriors | -1      | 7       | 1       | -4      | -4         |
+| 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 1       | -7      | -1      | 4       | 4          |
+
+IsCloseGameCase1 = No
+IsCloseGameCase2 = Yes
+IsCloseGameCase3 = Yes
+
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase1.png" alt="alt text" width="640" height="427">
 
@@ -110,6 +152,23 @@ Case 3: The final score deficit is greater than Z points.
 | NFL    | 24 points   |
 | MLB    | 3 runs      |
 
+Example Game: 
+
+| Game              | Team                | Q1 | Q2 | Q3 | Q4 | Final |
+|-------------------|---------------------|----|----|----|----|-------|
+| 2017 NBA Playoffs | Boston Celtics      | 18 | 13 | 26 | 29 | 86    |
+| 2017 NBA Playoffs | Cleveland Cavaliers | 32 | 40 | 31 | 27 | 130   |
+
+Delta's 
+
+| Game              | Team                | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
+|-------------------|---------------------|---------|---------|---------|---------|------------|
+| 2017 NBA Playoffs | Boston Celtics      | -14     | -41     | -46     | -44     | -44        |
+| 2017 NBA Playoffs | Cleveland Cavaliers | 14      | 41      | 46      | 44      | 44         |
+
+IsBlowoutCase1 = Yes
+IsBlowoutCase2 = Yes
+IsBlowoutCase3 = Yes
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase1.png" alt="alt text" width="640" height="427">
 
