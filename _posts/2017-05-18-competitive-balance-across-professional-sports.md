@@ -114,9 +114,9 @@ Blowout Average
 
 | League | Blowout Average |
 |--------|-----------------|
-| NBA    |  24.24          |
+| NBA    |     24.25%      |
 | NHL    |                 |
-| NFL    |                 |
+| NFL    |     5.37%       |
 | MLB    |                 |
 
 
