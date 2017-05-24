@@ -58,6 +58,7 @@ The game log data I used has two entries per game, 1 per team. I first calculate
 | Super Bowl 51 | Atlanta Falcons      | 0       | 18      | 19      | 0       | -6         |
 
 IsComebackCase1 = Yes
+
 IsComebackCase2 = Yes
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
@@ -111,7 +112,9 @@ Delta's
 | 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 1       | -7      | -1      | 4       | 4          |
 
 IsCloseGameCase1 = No
+
 IsCloseGameCase2 = Yes
+
 IsCloseGameCase3 = Yes
 
 
@@ -168,7 +171,9 @@ Delta's
 | 2017 NBA Playoffs | Cleveland Cavaliers | 14      | 41      | 46      | 44      | 44         |
 
 IsBlowoutCase1 = Yes
+
 IsBlowoutCase2 = Yes
+
 IsBlowoutCase3 = Yes
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase1.png" alt="alt text" width="640" height="427">
