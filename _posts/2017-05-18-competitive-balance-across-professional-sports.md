@@ -182,6 +182,8 @@ Model Accuracy?
 NFL and NHL score as most competitive 
 
 
+competitiveIndex = \frac{ComebackRate+CloseGameRate+(1-BlowoutRate)+(1-SalaryWinCorr)}{4}
+
 
 
 
