@@ -233,7 +233,7 @@ Salary caps have been introduced over the last three decades in three of the fou
 
 ## **Predictive Modeling**
 
-# CART (Classification & Regression Trees) 
+### CART (Classification & Regression Trees) 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_blowouts_tree.png" alt="alt text" width="640" height="427">
 ..commentary> 
@@ -248,11 +248,11 @@ Salary caps have been introduced over the last three decades in three of the fou
 ..commentary> 
 
 
-# Random Forest
+### Random Forest
 
 
 
-# Logistic Regression
+### Logistic Regression
 
 
 
