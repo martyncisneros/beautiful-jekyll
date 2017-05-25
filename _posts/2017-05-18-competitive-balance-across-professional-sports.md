@@ -19,7 +19,7 @@ I will measure competitiveness by looking at:
 -  Which league has the most linear relationship between wins per season and team salary?
 -  Which league is the most predictable? 
 
-In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, which provides historical game logs and game scores by quarter. I also scraped team payroll data from <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a>. 
+In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, to get historical game data and game scores by quarter. I also scraped <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a> for team payroll data. 
 
 ** The R code used for data wrangling and analysis can be found here for the <a href="" target="_blank">NBA</a>, <a href="" target="_blank">NHL</a>, <a href="" target="_blank">NFL</a>, and <a href="" target="_blank">MLB</a>. **
 
