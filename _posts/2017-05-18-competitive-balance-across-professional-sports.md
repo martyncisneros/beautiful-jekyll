@@ -4,7 +4,7 @@ title: Measuring the Competitive Balance across U.S. Professional Sports Using R
 subtitle: A look at Comebacks, Close Games, Blowouts, and Salary Cap Disparity
 bigimg: 
 - "/img/competitive-analysis/sports_header.png" : "© 2013 Stadium Management Company, LLC"
-published: false
+published: true
 ---
 
 This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most competitive playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. On the other hand, besides what will surely be an exciting National Basketball Association (NBA) finals between the Cleveland Cavaliers and Golden State Warriors (playing for the title for the <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">third straight year</a>), the competitive landscape in the league has suffered in recent years. In Game 2 of the Eastern Conference Finals, the Cavaliers set a playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41 point halftime</a> lead against the Boston Celtics. 
