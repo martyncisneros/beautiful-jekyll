@@ -93,7 +93,7 @@ Case 2: The game is within Y points going into the final quarter and final score
 
 Case 3: The final score is within Y points (or game goes to OT).
 
-![](http://latex.codecogs.com/gif.latex?IsCloseGameCase3%20%3D%20%28ABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2CYPts%5C%2COR%5C%2COvertime%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+![](http://latex.codecogs.com/gif.latex?IsCloseGameCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 To determine an appropiate Y point threshold to qualify a 'close game', I chose the maximum scorable points on one possession. 
 
