@@ -85,11 +85,11 @@ I define close games by three cases:
 
 Case 1: The game is within Y points through each quarter and final score is within Y points (or game goes to OT). 
 
-![](http://latex.codecogs.com/gif.latex?IsCloseGameCase1%20%3D%20%28ABS%28DeltaScoreQ1%29%5C%2C%5Cleq%5C%2CYPts%5C%2CAND%5C%2C%28ABS%28DeltaScoreQ2%29%5C%2C%5Cleq%5C%2CYPts%5C%2CAND%5C%2C%28ABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2CYPts%5C%2CAND%5C%2C%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2CYPts%5C%2COR%5C%2COvertime%5D%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+![](http://latex.codecogs.com/gif.latex?IsCloseGameCase1%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ1%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ2%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5D%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 Case 2: The game is within Y points going into the final quarter and final score is within Y points (or game goes to OT).
 
-![](http://latex.codecogs.com/gif.latex?IsCloseGameCase2%20%3D%20%28ABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2CYPts%5C%2CAND%5C%2C%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2CYPts%5C%2COR%5C%2COvertime%5D%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+![](http://latex.codecogs.com/gif.latex?IsCloseGameCase2%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5D%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 Case 3: The final score is within Y points (or game goes to OT).
 
