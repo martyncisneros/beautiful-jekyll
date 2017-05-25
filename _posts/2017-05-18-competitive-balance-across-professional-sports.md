@@ -141,9 +141,7 @@ The NHL and NFL stand out as most likely to produce close games. I then calculat
 
 **Blow Outs**
 
-Blow out games are those that are outside of some score differential, usually those 'non-competitive' and lopsided games sports fans hope to forget. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
-
-_Z points is 3x the maximum scorable one one possession per sport._
+I define blowouts by three cases: 
 
 Case 1: The game score deficit is greater than Z points through each quarter and final score deficit is greater than Z points. 
 
@@ -151,6 +149,8 @@ Case 2: The game score deficit is greater than Z points going into the final qua
 
 Case 3: The final score deficit is greater than Z points. 
 
+
+_Z points is 3x the maximum scorable one one possession per sport._
 | League | Z Threshold |
 |--------|-------------|
 | NBA    | 12 points   |
