@@ -60,7 +60,7 @@ The game log data I used has two entries per game, 1 per team. I calculated the 
 | Super Bowl 51 | New England Patriots | 0       | -18     | -19     | 0       | 6          |
 | Super Bowl 51 | Atlanta Falcons      | 0       | 18      | 19      | 0       | -6         |
 
-This game would qualify as both case 1 and case 2 comebacks. Now let's look at the likelyhood of a comeback game across the 4 leagues. 
+This game would qualify as both case 1 and case 2 comebacks since the Patriots were down by 18 points at halftime and 19 points going into the 4th but still won the game. Now let's look at the likelyhood of a comeback game across the 4 leagues. 
 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
