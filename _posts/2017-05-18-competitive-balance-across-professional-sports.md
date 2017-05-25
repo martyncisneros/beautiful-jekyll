@@ -9,13 +9,9 @@ published: false
 
 This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most competitive playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. On the other hand, besides what will surely be an exciting National Basketball Association (NBA) finals between the Cleveland Cavaliers and Golden State Warriors (playing for the title for the <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">third straight year</a>), the competitive landscape in the league has suffered in recent years. In Game 2 of the Eastern Conference Finals, the Cavaliers set a playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41 point halftime</a> lead against the Boston Celtics. 
 
-This recent sports drama has triggered a question primed for a data-based answer, **which professional sports league is the most competitive?** 
+This recent sports drama has triggered a question primed for a data-based answer, **which league (NBA, NHL, NFL, or MLB) is the most competitive?** 
 
-I will measure competitiveness by looking at comebacks, close games, blowouts, and salary disparity across the NBA, NHL, NFL, and MLB.
-
-
-
-In this analysis I will utilize an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, which provides historical game log data and game scores by quarter to address the following questions: 
+I will measure competitiveness by looking at: 
 
 -  Which league is most likely to produce a comeback game? 
 -  Which league is most likely to produce a close game? 
@@ -23,25 +19,25 @@ In this analysis I will utilize an expansive <a href="http://developers.stattles
 -  Which league has the most linear relationship between wins per season and team salary?
 -  Which league is the most predictable? 
 
-First, let's look at come
-
-Equipped with granular box score data, I was able to calculate the score differential at each quarter/inning/intermission point for all regular season and playoff games since 2015. Using these running score differentials, I applied some logic to determine if a game falls into one of our categories. 
+In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, which provides historical game logs and game scores by quarter. I also scraped team payroll data from <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a>. 
 
 ** The R code used for data wrangling and analysis can be found here for the <a href="" target="_blank">NBA</a>, <a href="" target="_blank">NHL</a>, <a href="" target="_blank">NFL</a>, and <a href="" target="_blank">MLB</a>. **
 
+First, in order to measure the likelyhood of comebacks, close games, and blowouts, I calculated score differentials at each quarter/inning/intermission point for all regular season and playoff games since 2015. I then used these score differentials by quarter to determine if a game fit one of the categories. 
+
 **Comebacks**
 
-Comebacks are defined as games where a team is down by some point deficit and ultimately won the game. I will use the following 
-
-_X is the average deficit for losing teams going into the final quarter._
+I define comebacks by two cases: 
 
 Case 1: Team A is down by X points going into the final quarter and wins the game. 
 
-![](http://latex.codecogs.com/gif.latex?IsComebackCase1%20%3D%20%28IF%20%5C%2C%20DeltaQ3%20%5Cleq%20Threshold%20%5C%2C%20And%20%5C%2C%20DeltaFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
+![](http://latex.codecogs.com/gif.latex?IsComebackCase1%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ3%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
 Case 2: Team A is down by X points going into the third quarter and wins the game. 
 
-![](http://latex.codecogs.com/gif.latex?IsComebackCase2%20%3D%20%28IF%20%5C%2C%20DeltaQ2%20%5Cleq%20Threshold%20%5C%2C%20And%20%5C%2C%20DeltaFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
+![](http://latex.codecogs.com/gif.latex?IsComebackCase2%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ2%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
+
+To determine an appropiate X Threshold to qualify a 'comeback', I looked at the average deficit for losing teams going into the final quarter.
 
 | League | X Threshold |
 |--------|-------------|
