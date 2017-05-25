@@ -145,12 +145,18 @@ I define blowouts by three cases:
 
 Case 1: The game score deficit is greater than Z points through each quarter and final score deficit is greater than Z points. 
 
+![](http://latex.codecogs.com/gif.latex?IsBlowoutCase1%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ1%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ2%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2CZPts%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+
 Case 2: The game score deficit is greater than Z points going into the final quarter and final score deficit is greater than Z points. 
+
+![](http://latex.codecogs.com/gif.latex?IsBlowoutCase2%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2CZPts%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 Case 3: The final score deficit is greater than Z points. 
 
+![](http://latex.codecogs.com/gif.latex?IsBlowoutCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2CZPts%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
-_Z points is 3x the maximum scorable one one possession per sport._
+To determine an appropiate Z point threshold to qualify a 'blowout game', I chose three times the maximum scorable points on one possession. 
+
 | League | Z Threshold |
 |--------|-------------|
 | NBA    | 12 points   |
@@ -158,46 +164,41 @@ _Z points is 3x the maximum scorable one one possession per sport._
 | NFL    | 24 points   |
 | MLB    | 3 runs      |
 
-Example Game: 
+Example Blowout Game: 
 
 | Game              | Team                | Q1 | Q2 | Q3 | Q4 | Final |
 |-------------------|---------------------|----|----|----|----|-------|
 | 2017 NBA Playoffs | Boston Celtics      | 18 | 13 | 26 | 29 | 86    |
 | 2017 NBA Playoffs | Cleveland Cavaliers | 32 | 40 | 31 | 27 | 130   |
 
-Delta's 
+The game log data I used has two entries per game, 1 per team. I calculated the running differentials by quarter. 
 
 | Game              | Team                | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |-------------------|---------------------|---------|---------|---------|---------|------------|
 | 2017 NBA Playoffs | Boston Celtics      | -14     | -41     | -46     | -44     | -44        |
 | 2017 NBA Playoffs | Cleveland Cavaliers | 14      | 41      | 46      | 44      | 44         |
 
-IsBlowoutCase1 = Yes
+This game would qualify as case 1, case 2, and case 3 blowouts since the game differentials are all greater than 12 points..by a mile. Now let's look at the likelyhood of a blowout game across the 4 leagues. 
 
-IsBlowoutCase2 = Yes
-
-IsBlowoutCase3 = Yes
-
+_Case 1: Game score differential is greater than Z points through each quarter and final score_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase1.png" alt="alt text" width="640" height="427">
 
-NBA playoffs have produced just over **7.5%** case 1 blowouts, games over 12 points through each quarter. 
-
+_Case 2: Game score differential is greater than Z points going into the final quarter and final score_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase2.png" alt="alt text" width="640" height="427">
 
-NBA and MLB produce **20-30%** case 2 blowouts while the NFL and NHL produce less than **10%** blow out games of this type. 
-
+_Case 3: Game final score differential is greater than Z points_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase3.png" alt="alt text" width="640" height="427">
 
-The trend continues with case 3 blow outs. NBA and MLB have produced **30-40%** blow out games while the NFL and NHL have produced an average of **10%** blow out games. 
+The NBA and MLB stand out as most likely to produce blowout games. I then calculated a Global Blowout Game Rate, to contribute to the final competitiveIndex calculation, for each league by averaging the blowout rates for regular season and playoffs for both cases. 
 
 Blowout Average
 
-| League | Blowout Rate |
-|--------|--------------|
-| NBA    | 24.2%        |
-| MLB    | 21.8%        |
-| NFL    | 5.4%         |
-| NHL    | 4.9%         |
+| League | Global Blowout Rate |
+|--------|---------------------|
+| NBA    | 24.2%               |
+| MLB    | 21.8%               |
+| NFL    | 5.4%                |
+| NHL    | 4.9%                |
 
 
 **Salary Cap**
