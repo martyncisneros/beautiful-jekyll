@@ -25,11 +25,8 @@ In this analysis, I utilized an expansive <a href="http://developers.stattleship
 
 First, in order to measure the likelyhood of comebacks, close games, and blowouts, I calculated score differentials at each quarter/inning/intermission point for all regular season and playoff games since 2015. I then used these score differentials by quarter to determine if a game fit one of the categories. 
 
-### **Comebacks**
 
 ## **Comebacks**
-
-# **Comebacks**
 
 I define comebacks by two cases: 
 
@@ -81,7 +78,8 @@ Overall, the likelyhood of a comeback game is small for every league. There aren
 | MLB    | 7.1%                 |
 | NHL    | 5.6%                 |
 
-**Close Games**
+
+## **Close Games**
 
 I define close games by three cases: 
 
@@ -143,7 +141,8 @@ The NHL and NFL stand out as most likely to produce close games. I then calculat
 | MLB    | 19.4%                  |
 | NBA    | 12.5%                  |
 
-**Blow Outs**
+
+## **Blow Outs**
 
 I define blowouts by three cases: 
 
@@ -205,7 +204,7 @@ Blowout Average
 | NHL    | 4.9%                |
 
 
-**Salary Cap**
+## **Salary Cap**
 
 Salary caps have been introduced over the last three decades in three of the four leagues: NBA, NHL, and NFL. Major League Baseball is the only major sports league in the United States that does not have a salary cap; however, the MLB does have a luxury tax. 
 
@@ -231,7 +230,8 @@ Salary caps have been introduced over the last three decades in three of the fou
 | NHL    | 0.6015134            |
 | NFL    | 0.03972376           |
 
-**Predictive Modeling**
+
+## **Predictive Modeling**
 
 CART (Classification & Regression Trees) 
 
@@ -268,7 +268,7 @@ Model Accuracy?
 
 
 
-**Conclusion**
+## **Conclusion**
 
 To determine the most and least competitive leagues, I calculated a 'Competitive Index' using the results from the analysis. This index is essentially an average of all values. 
 
