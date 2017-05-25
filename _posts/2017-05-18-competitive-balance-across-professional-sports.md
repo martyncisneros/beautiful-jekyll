@@ -71,12 +71,12 @@ Overall, there are very few games that fall into this category.
 
 On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to be made from this view. 
 
-| League | Comeback Rate |
-|--------|---------------|
-| NFL    | 8%            |
-| NBA    | 7.4%          |
-| MLB    | 7.1%          |
-| NHL    | 5.6%          |
+| League | Global Comeback Rate |
+|--------|----------------------|
+| NFL    | 8%                   |
+| NBA    | 7.4%                 |
+| MLB    | 7.1%                 |
+| NHL    | 5.6%                 |
 
 **Close Games**
 
