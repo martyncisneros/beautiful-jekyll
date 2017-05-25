@@ -283,7 +283,7 @@ competitiveIndex is a scale of 0 to 1. 1 being most competitive and 0 being leas
 | MLB    | 0.36             |
 | NBA    | 0.34             |
 
-And there we have it, the NFL is the most competitive league while the NBA ranks last with a competitiveIndex of 0.34. 
+And there we have it, the NFL is the most competitive league as its competitiveIndex of 0.59 <a href="http://thesportsfanjournal.com/wp-content/uploads/2016/10/ezekiel-elliott-e48ce95a24a55fb1.jpg" target="_blank">hurdles</a> the other leagues. 
 
 
 <strong>Update:</strong>
