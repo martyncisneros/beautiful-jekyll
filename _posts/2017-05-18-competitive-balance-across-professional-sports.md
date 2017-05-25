@@ -16,7 +16,7 @@ I will measure competitiveness by looking at:
 -  Which league is most likely to produce a comeback game? 
 -  Which league is most likely to produce a close game? 
 -  Which league is most likely to produce a blowout game? 
--  Which league has the most linear relationship between wins per season and team salary?
+-  Which league has the most linear relationship between wins and payroll?
 -  Which league is the most predictable? 
 
 In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, to get historical game data and game scores by quarter. I also scraped <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a> for team payroll data. 
@@ -122,10 +122,10 @@ The game log data I used has two entries per game, 1 per team. I calculated the 
 
 This game would qualify as both case 2 and case 3 close games since the game score differential going into the final quarter and final score were within 4 points. However, because the halftime score differential was 7 points, I am not qualifying this game as a case 1 close game. Now let's look at the likelyhood of a close game across the 4 leagues. 
 
-_Case 1: Game is with Y points through each quarter and final score (or OT)_
+_Case 1: Game is within Y points through each quarter and final score (or OT)_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase1.png" alt="alt text" width="640" height="427">
 
-_Case 2: Game is with Y points going into final quarter and final score (or OT)_
+_Case 2: Game is within Y points going into final quarter and final score (or OT)_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase2.png" alt="alt text" width="640" height="427">
 
 _Case 3: Game's final score is within Y points (or OT)_
@@ -227,6 +227,7 @@ Using R's correlation function, I calculated the relationship between wins and s
 - Score of 0.5 means a moderate linear relationship 
 - Score of 0.3 means a a weak liner relationship
 - Score of 0 means no relationship
+
 
 | League | SalaryWinCorrelation |
 |--------|----------------------|
