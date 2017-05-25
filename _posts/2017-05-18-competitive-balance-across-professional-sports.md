@@ -25,7 +25,11 @@ In this analysis, I utilized an expansive <a href="http://developers.stattleship
 
 First, in order to measure the likelyhood of comebacks, close games, and blowouts, I calculated score differentials at each quarter/inning/intermission point for all regular season and playoff games since 2015. I then used these score differentials by quarter to determine if a game fit one of the categories. 
 
-**Comebacks**
+###**Comebacks**
+
+##**Comebacks**
+
+#**Comebacks**
 
 I define comebacks by two cases: 
 
