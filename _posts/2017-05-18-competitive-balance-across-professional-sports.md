@@ -65,11 +65,9 @@ This game would qualify as both case 1 and case 2 comebacks since the Patriots w
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
 
-Overall, there are very few games that fall into this category. 
-
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase2.png" alt="alt text" width="640" height="427">
 
-On average, about **10%** of games across the leagues fall into a comeback category. However, there aren't any sweeping statements to be made from this view. 
+Overall, the likelyhood of a comeback game is small for every league. There aren't any clear. I then calculated a Global Comeback Rate for each league by averaging the comeback game %s for regular season and playoffs for both cases. 
 
 | League | Global Comeback Rate |
 |--------|----------------------|
