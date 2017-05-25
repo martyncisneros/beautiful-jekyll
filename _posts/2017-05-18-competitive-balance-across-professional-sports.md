@@ -33,7 +33,7 @@ Case 1: Team A is down by X points going into the final quarter and ends up wini
 
 ![](http://latex.codecogs.com/gif.latex?IsComebackCase1%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ3%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
-Case 2: Team A is down by X points going into the third quarter and ends up winning the game. 
+Case 2: Team A is down by X points going into halftime and ends up winning the game. 
 
 ![](http://latex.codecogs.com/gif.latex?IsComebackCase2%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ2%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
@@ -62,12 +62,13 @@ The game log data I used has two entries per game, 1 per team. I calculated the 
 
 This game would qualify as both case 1 and case 2 comebacks since the Patriots were down by 18 points at halftime and 19 points going into the 4th but still won the game. Now let's look at the likelyhood of a comeback game across the 4 leagues. 
 
-
+_Case 1: Down by Xpts going into final quarter and win_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
 
+_Case 2: Down by Xpts going into halftime and win_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase2.png" alt="alt text" width="640" height="427">
 
-Overall, the likelyhood of a comeback game is small for every league. There aren't any clear. I then calculated a Global Comeback Rate for each league by averaging the comeback game %s for regular season and playoffs for both cases. 
+Overall, the likelyhood of a comeback game is small for every league. There aren't any clear signals. I then calculated a Global Comeback Rate, to contribute to the final competitiveIndex calculation, for each league by averaging the comeback game rates for regular season and playoffs for both cases. 
 
 | League | Global Comeback Rate |
 |--------|----------------------|
@@ -78,15 +79,21 @@ Overall, the likelyhood of a comeback game is small for every league. There aren
 
 **Close Games**
 
-Close games are those that are within some score differential, usually those 'competitive' games sports fans remember. I attempt to provide structure to this definiton by categorizing a game as such if it meets one of the cases below. 
-
-_Y points is the maximum scorable one one possession per sport._ 
+I define close games by three cases: 
 
 Case 1: The game is within Y points through each quarter and final score is within Y points (or game goes to OT). 
 
-Case 2: The game is within Y points going into the final quarter and final score is within Y points (or game goes to OT). 
+![](http://latex.codecogs.com/gif.latex?IsCloseGameCase1%20%3D%20%28ABS%28DeltaScoreQ1%29%20%5C%2C%20%5Cleq%204%5C%2C%20AND%5C%2C%20ABS%28DeltaScoreQ2%29%5C%2C%20%5Cleq%20%5C%2C4%5C%2CAND%5C%2CABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2C4%5C%2CAND%5C%2C%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C4%5C%2COR%5C%2COvertime%5D%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+
+Case 2: The game is within Y points going into the final quarter and final score is within Y points (or game goes to OT).
+
+![](http://latex.codecogs.com/gif.latex?IsCloseGameCase2%20%3D%20%28ABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2C4%5C%2CAND%5C%2C%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C4%5C%2COR%5C%2COvertime%5D%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 Case 3: The final score is within Y points (or game goes to OT).
+
+![](http://latex.codecogs.com/gif.latex?IsCloseGameCase3%20%3D%20%28ABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C4%5C%2COR%5C%2COvertime%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+
+To determine an appropiate Y point threshold to qualify a 'close game', I chose the maximum scorable points on one possession. 
 
 | League | Y Threshold |
 |--------|-------------|
@@ -95,7 +102,7 @@ Case 3: The final score is within Y points (or game goes to OT).
 | NFL    | 8 points    |
 | MLB    | 1 run       |
 
-Example Game: 
+Example Close Game Game: 
 
 For our close game example, I chose the <a href="https://streamable.com/t7ac" target="_blank">epic back-n-forth NBA Finals Game 7</a> (aka the undercard to Game of Thrones' <a href="http://www.imdb.com/title/tt4283088/" target="_blank">Battle of the Bastards</a> which aired right after). 
 
@@ -104,38 +111,33 @@ For our close game example, I chose the <a href="https://streamable.com/t7ac" ta
 | 2016 NBA Finals Game 7 | Golden State Warriors | 22 | 27 | 27 | 13 | 89    |
 | 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 23 | 19 | 33 | 18 | 93    |
 
-Delta's 
+The game log data I used has two entries per game, 1 per team. I calculated the running differentials by quarter. 
 
 | Game                   | Team                  | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |------------------------|-----------------------|---------|---------|---------|---------|------------|
 | 2016 NBA Finals Game 7 | Golden State Warriors | -1      | 7       | 1       | -4      | -4         |
 | 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 1       | -7      | -1      | 4       | 4          |
 
-IsCloseGameCase1 = No
+This game would qualify as both case 2 and case 3 close games since the game score differential going into the final quarter and final score were within 4 points. However, becase the halftime score differential was 7 points, I am not qualifying this game as a case 1 close game. Now let's look at the likelyhood of a close game across the 4 leagues. 
 
-IsCloseGameCase2 = Yes
-
-IsCloseGameCase3 = Yes
-
-
+_Case 1: Game is with Y points through each quarter and final score (or OT)_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase1.png" alt="alt text" width="640" height="427">
 
-The NHL and NFL stand out in having **20-40%** of their games in the category where the game was within Y differential through each quarter and final score. Alternatively, the NBA produces less than **5%** of games in this category. 
-
+_Case 2: Game is with Y points going into final quarter and final score (or OT)_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase2.png" alt="alt text" width="640" height="427">
 
-Again, we see NHL and NFL stand out as more likely to produce a comeback game as defined by case 2. 
-
+_Case 3: Game's final score is within Y points (or OT)_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase3.png" alt="alt text" width="640" height="427">
 
-And once again, we see NHL and NFL stand out as more likely to produce a close game as defined by case 3.
+The NHL and NFL stand out as most likely to produce close games. I then calculated a Global Close Game Rate, to contribute to the final competitiveIndex calculation, for each league by averaging the close game rates for regular season and playoffs for both cases. 
 
-| League | Close Game Rate |
-|--------|-----------------|
-| NHL    | 43.7%           |
-| NFL    | 35.6%           |
-| MLB    | 19.4%           |
-| NBA    | 12.5%           |
+
+| League | Global Close Game Rate |
+|--------|------------------------|
+| NHL    | 43.7%                  |
+| NFL    | 35.6%                  |
+| MLB    | 19.4%                  |
+| NBA    | 12.5%                  |
 
 **Blow Outs**
 
