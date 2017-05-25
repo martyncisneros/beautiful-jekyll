@@ -29,15 +29,15 @@ First, in order to measure the likelyhood of comebacks, close games, and blowout
 
 I define comebacks by two cases: 
 
-Case 1: Team A is down by X points going into the final quarter and wins the game. 
+Case 1: Team A is down by X points going into the final quarter and ends up wining the game. 
 
 ![](http://latex.codecogs.com/gif.latex?IsComebackCase1%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ3%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
-Case 2: Team A is down by X points going into the third quarter and wins the game. 
+Case 2: Team A is down by X points going into the third quarter and ends up winning the game. 
 
 ![](http://latex.codecogs.com/gif.latex?IsComebackCase2%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ2%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
-To determine an appropiate X Threshold to qualify a 'comeback', I looked at the average deficit for losing teams going into the final quarter.
+To determine an appropiate X point threshold to qualify a 'comeback', I chose the average deficit going into the final quarter for a team who lost.
 
 | League | X Threshold |
 |--------|-------------|
@@ -46,24 +46,22 @@ To determine an appropiate X Threshold to qualify a 'comeback', I looked at the 
 | NFL    | 9 points    |
 | MLB    | 2 runs      |
 
-Example Game: 
-
+Example Comeback Game: 
 
 | Game          | Team                 | Q1 | Q2 | Q3 | Q4 | OT | Final |
 |---------------|----------------------|----|----|----|----|----|-------|
 | Super Bowl 51 | New England Patriots | 0  | 3  | 6  | 19 | 6  | 34    |
 | Super Bowl 51 | Atlanta Falcons      | 0  | 21 | 7  | 0  | 0  | 28    |
 
-The game log data I used has two entries per game, 1 per team. I first calculate the differentials at the end of each quarter. 
+The game log data I used has two entries per game, 1 per team. I calculated the running differentials by quarter. 
 
 | Game          | Team                 | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |---------------|----------------------|---------|---------|---------|---------|------------|
 | Super Bowl 51 | New England Patriots | 0       | -18     | -19     | 0       | 6          |
 | Super Bowl 51 | Atlanta Falcons      | 0       | 18      | 19      | 0       | -6         |
 
-IsComebackCase1 = Yes
+This game would qualify as both case 1 and case 2 comebacks. Now let's look at the likelyhood of a comeback game across the 4 leagues. 
 
-IsComebackCase2 = Yes
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
 
