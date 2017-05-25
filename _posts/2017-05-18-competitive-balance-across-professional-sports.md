@@ -156,7 +156,7 @@ Case 2: The game score deficit is greater than Z points going into the final qua
 
 Case 3: The final score deficit is greater than Z points. 
 
-![](http://latex.codecogs.com/gif.latex?IsBlowoutCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2CZPts%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+![](http://latex.codecogs.com/gif.latex?IsCloseGameCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 To determine an appropiate Z point threshold to qualify a 'blowout game', I chose three times the maximum scorable points on one possession. 
 
