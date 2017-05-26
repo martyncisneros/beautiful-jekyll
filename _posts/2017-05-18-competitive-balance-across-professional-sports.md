@@ -7,7 +7,7 @@ bigimg:
 published: false
 ---
 
-This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most entertaining playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. On the other hand, the National Basketball Association (NBA) playoffs have been a <a href="https://streamable.com/kddo0" target="_blank">record breaking lopsided affair</a> leading to the inevitable <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">third straight</a> Cavaliers and Golden State Warriors Finals matchup. 
+This past February, the sports world witnessed one of the most improbable comebacks in sports history. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the NFL Super Bowl. Right now hockey fans are being treated to one of the most entertaining playoffs ever. The NHL 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. On the other hand, the NBA Playoffs have been a <a href="https://streamable.com/kddo0" target="_blank">record breaking lopsided affair</a> leading to the inevitable <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">third straight</a> Cavaliers vs. Golden State Warriors Finals matchup. 
 
 These recent events triggered a question primed for a data-based answer, **which league (NBA, NHL, NFL, or MLB) is the most competitive?** 
 
@@ -23,7 +23,7 @@ In this analysis, I utilized an expansive <a href="http://developers.stattleship
 
 ** The R code used for data wrangling and analysis can be found here for the <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.R" target="_blank">NBA</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.R" target="_blank">NHL</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.R" target="_blank">NFL</a>, and <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.R" target="_blank">MLB</a>. **
 
-First, in order to measure the likelyhood of comebacks, close games, and blowouts, I calculated score differentials at each quarter/inning/intermission point for all regular season and playoff games since 2015. I then used these score differentials by quarter to determine if a game fit one of the categories. 
+First, in order to measure the likelyhood of comebacks, close games, and blowouts, I used the granular box score data to calculate game score differentials at each quarter/inning/intermission break for all regular season and playoff games since 2015. I then used these score differentials to determine if a game fit one of the categories. 
 
 
 ## **Comebacks**
@@ -38,7 +38,7 @@ Case 2: Team is down by X points going into halftime and ends up winning the gam
 
 ![](http://latex.codecogs.com/gif.latex?IsComebackCase2%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ2%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
-To determine an appropiate X point threshold to qualify a 'comeback', I chose the average deficit going into the final quarter for a team who lost.
+To determine an appropiate X point threshold to qualify a 'comeback', I looked at the the average deficit going into the final quarter for a team who ultimately lost the game. 
 
 | League | X Threshold |
 |--------|-------------|
@@ -53,8 +53,6 @@ Example Comeback Game:
 |---------------|----------------------|----|----|----|----|----|-------|
 | Super Bowl 51 | New England Patriots | 0  | 3  | 6  | 19 | 6  | 34    |
 | Super Bowl 51 | Atlanta Falcons      | 0  | 21 | 7  | 0  | 0  | 28    |
-
-The game log data I used has two entries per game, 1 per team. I calculated the running differentials by quarter. 
 
 | Game          | Team                 | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |---------------|----------------------|---------|---------|---------|---------|------------|
