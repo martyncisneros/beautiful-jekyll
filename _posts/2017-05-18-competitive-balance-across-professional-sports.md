@@ -286,23 +286,18 @@ Each node shows
 
 
 
-### Logistic Regression Model 
-
-
-
-
 
 
 
 
 Model Accuracy? 
 
-| League | Decision Tree | Random Forest | Logistic Regression |
-|--------|---------------|---------------|---------------------|
-| NBA    |               |               |                     |
-| NHL    |               |               |                     |
-| NFL    |               |               |                     |
-| MLB    |               |               |                     |
+| League | Decision Tree | Random Forest | 
+|--------|---------------|---------------|
+| NBA    |               |               |                     
+| NHL    |               |               |                     
+| NFL    |               |               |                    
+| MLB    |               |               |                     
 
 
 
@@ -327,12 +322,12 @@ competitiveIndex is a measure of competitiveness on a scale of 0 to 1
 | NBA    | 0.38             |
 | MLB    | 0.36             |
 
-And there we have it, the NHL is the most competitive league with competitiveIndex score of 0.51. The NFL is close behind with a score of 0.49. Anecdotally, these results align with my own ranking of live sporting events to attend. 
+And there we have it, the NHL is the most competitive league with competitiveIndex score of 0.51. The NFL is close behind with a score of 0.49. Anecdotally, these results align with my own ranking of preferred sporting events to attend. 
 
 Thanks for reading, send me a message with your thoughts. 
 
 
 <strong>Update:</strong>
 
-<strong>May 31st, 2017: This post has been updated with the latest NBA and NHL playoff outcomes.</strong>
+<strong>May 31st, 2017: This post has been updated with the latest NBA and NHL 2017 playoff outcomes.</strong>
 
