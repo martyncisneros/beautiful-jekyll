@@ -49,11 +49,13 @@ To determine an appropiate X point threshold to qualify a 'comeback', I looked a
 
 Example Comeback Game: 
 
+Box Score
 | Game          | Team                 | Q1 | Q2 | Q3 | Q4 | OT | Final |
 |---------------|----------------------|----|----|----|----|----|-------|
 | Super Bowl 51 | New England Patriots | 0  | 3  | 6  | 19 | 6  | 34    |
 | Super Bowl 51 | Atlanta Falcons      | 0  | 21 | 7  | 0  | 0  | 28    |
 
+Calculated Game Score Differentials
 | Game          | Team                 | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |---------------|----------------------|---------|---------|---------|---------|------------|
 | Super Bowl 51 | New England Patriots | 0       | -18     | -19     | 0       | 6          |
@@ -67,7 +69,7 @@ _Case 1: Down by Xpts going into final quarter and win_
 _Case 2: Down by Xpts going into halftime and win_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase2.png" alt="alt text" width="640" height="427">
 
-Overall, the likelyhood of a comeback game is small across the leagues. There aren't any clear signals. Let's now calculate a Global Comeback Rate, to contribute to the final competitiveIndex calculation, for each league by averaging the comeback game rates for regular season and playoffs for both cases. 
+Overall, the likelyhood of a comeback game is small across the leagues. There aren't any clear signals. I average the comeback game rates for regular season, playoffs, and both cases to arrive at a Global Comeback Rate. We'll use this rate later in the final competitiveIndex calculation. 
 
 | League | Global Comeback Rate |
 |--------|----------------------|
@@ -93,7 +95,7 @@ Case 3: The final score is within Y points (or game goes to OT).
 
 ![](http://latex.codecogs.com/gif.latex?IsCloseGameCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
-To determine an appropiate Y point threshold to qualify a 'close game', I chose the maximum scorable points on one possession. 
+For the Y point threshold to qualify a 'close game', I chose the maximum scorable points on one possession. 
 
 | League | Y Threshold |
 |--------|-------------|
@@ -111,8 +113,6 @@ For our close game example, I chose the <a href="https://streamable.com/t7ac" ta
 | 2016 NBA Finals Game 7 | Golden State Warriors | 22 | 27 | 27 | 13 | 89    |
 | 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 23 | 19 | 33 | 18 | 93    |
 
-The game log data I used has two entries per game, 1 per team. I calculated the running differentials by quarter. 
-
 | Game                   | Team                  | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |------------------------|-----------------------|---------|---------|---------|---------|------------|
 | 2016 NBA Finals Game 7 | Golden State Warriors | -1      | 7       | 1       | -4      | -4         |
@@ -129,7 +129,7 @@ _Case 2: Game is within Y points going into final quarter and final score (or OT
 _Case 3: Game's final score is within Y points (or OT)_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase3.png" alt="alt text" width="640" height="427">
 
-The NHL and NFL stand out as most likely to produce close games. Now let's calculate a Global Close Game Rate, to contribute to the final competitiveIndex calculation, for each league by averaging the close game rates for regular season and playoffs for both cases. 
+The NHL and NFL stand out as most likely to produce close games. I average the close game rates for regular season, playoffs, and all three cases to arrive at a Global Close Game Rate. We'll use this rate later in the final competitiveIndex calculation. 
 
 
 | League | Global Close Game Rate |
@@ -156,7 +156,7 @@ Case 3: The final score deficit is greater than Z points.
 
 ![](http://latex.codecogs.com/gif.latex?IsBlowoutCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2C%20ZPts%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
-To determine an appropiate Z point threshold to qualify a 'blowout game', I chose a threshold of three times the maximum scorable points on one possession. 
+For the Z point threshold to qualify a 'blowout game', I chose three times the maximum scorable points on one possession. 
 
 | League | Z Threshold |
 |--------|-------------|
@@ -171,8 +171,6 @@ Example Blowout Game:
 |-------------------|---------------------|----|----|----|----|-------|
 | 2017 NBA Playoffs | Boston Celtics      | 18 | 13 | 26 | 29 | 86    |
 | 2017 NBA Playoffs | Cleveland Cavaliers | 32 | 40 | 31 | 27 | 130   |
-
-The game log data I used has two entries per game, 1 per team. I calculated the running differentials by quarter. 
 
 | Game              | Team                | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |-------------------|---------------------|---------|---------|---------|---------|------------|
@@ -190,9 +188,8 @@ _Case 2: Game score differential is greater than Z points going into the final q
 _Case 3: Game final score differential is greater than Z points_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase3.png" alt="alt text" width="640" height="427">
 
-The NBA and MLB stand out as most likely to produce blowout games. Let's now calculate a Global Blowout Game Rate, to contribute to the final competitiveIndex calculation, for each league by averaging the blowout rates for regular season and playoffs for both cases. 
+The NBA and MLB stand out as most likely to produce blowout games. I average the blowout rates for regular season, playoffs, and all three cases to arrive at a Global Blowout Game Rate. We'll use this rate later in the final competitiveIndex calculation.
 
-Blowout Average
 
 | League | Global Blowout Rate |
 |--------|---------------------|
@@ -204,11 +201,9 @@ Blowout Average
 
 ## **Salary Cap**
 
-Salary caps have been introduced over the last three decades in three of the four leagues: NBA, NHL, and NFL. Major League Baseball is the only major sports league in the United States that does not have a salary cap; however, it does have a luxury tax in place of a salary cap in order to level the spending an individual team can spend on their roster. In Major League Baseball, their “luxury tax” allows teams to go over the threshold, but at a premium.
+Salary caps were introduced to the NBA, NHL, and NFL over the last three decades as an effort to place an upper limit on team spending. In place of a salary cap, the MLB implemented a luxury tax which allows teams to go over the threshold, but at a premium. In this part of the analysis, I leverage payroll data to determine the correlation between total wins in a season and a team's payroll for that season. 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Salarycapbyleague.png" alt="alt text" width="640" height="427">
-
-Another variable that we will consider in our competitiveIndex will be the correlation between total wins in a season and a team's payroll for that season. Let's look at the relationship between wins and salary across the leagues. 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHLpayrollandwins.png" alt="alt text" width="640" height="427">
 
