@@ -286,11 +286,11 @@ To determine the most and least competitive leagues, I calculated a 'Competitive
 
 ![](http://latex.codecogs.com/gif.latex?competitiveIndex%20%3D%20%5Cfrac%7BComebackRate%5C%2C%20&plus;%5C%2C%20CloseGameRate%5C%2C%20&plus;%5C%2C%281%5C%2C%20-%5C%2C%20BlowoutRate%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20SalaryWinCorrelation%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20PredictiveAccuracy%29%20%7D%7B5%7D)
 
-> competitiveIndex is a scale of 0 to 1. 
+> competitiveIndex is a scale of 0 to 1 
 
-> - 1 being most competitive 
+> ...1 being most competitive 
 
-> - 0 being least competitive 
+> ...0 being least competitive 
 
 | League | competitiveIndex |
 |--------|------------------|
