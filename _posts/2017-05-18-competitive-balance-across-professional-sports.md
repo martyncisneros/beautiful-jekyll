@@ -50,12 +50,14 @@ To determine an appropiate X point threshold to qualify a 'comeback', I looked a
 Example Comeback Game: 
 
 Box Score
+
 | Game          | Team                 | Q1 | Q2 | Q3 | Q4 | OT | Final |
 |---------------|----------------------|----|----|----|----|----|-------|
 | Super Bowl 51 | New England Patriots | 0  | 3  | 6  | 19 | 6  | 34    |
 | Super Bowl 51 | Atlanta Falcons      | 0  | 21 | 7  | 0  | 0  | 28    |
 
 Calculated Game Score Differentials
+
 | Game          | Team                 | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |---------------|----------------------|---------|---------|---------|---------|------------|
 | Super Bowl 51 | New England Patriots | 0       | -18     | -19     | 0       | 6          |
