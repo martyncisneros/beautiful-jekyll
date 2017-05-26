@@ -250,13 +250,27 @@ The first method I use is called classification and regression trees, or CART. T
 
 Some advantages of CART are that it does not assume a linear model, like logistic regression or linear regression, and it's a very interpretable model.
 
+Each node shows
 
+> the predicted outcome (blowout or not),
+
+> the predicted probability of a blowout,
+
+> the percentage of observations in the node.
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_blowouts_tree.png" alt="alt text" width="640" height="427">
 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLB_blowouts_tree.png" alt="alt text" width="640" height="427">
 
+
+Each node shows
+
+> the predicted outcome (close game or not),
+
+> the predicted probability of a close game,
+
+> the percentage of observations in the node.
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_closegames_tree.png" alt="alt text" width="640" height="427">
 
