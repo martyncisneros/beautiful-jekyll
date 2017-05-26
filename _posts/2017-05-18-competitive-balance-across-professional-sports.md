@@ -240,12 +240,17 @@ Hard cap leagues do have a weaker correlation between salary and wins, good sign
 
 ## **Predictive Modeling**
 
-The final variable in our competitiveIndex calculation will be a measure of how predictable the four leagues are. For each league, I chose the most frequent case from above
+The final variable in our competitiveIndex calculation will be a measure of how predictable the four leagues are. In this part of the analysis, I look to predict Case 3 blow outs for the NBA and MLB and Case 3 close games for the NFL and NHL. These were the most likely cases for each league and will provide the largest sample size of game data. 
 
-
-
+For the NBA and MLB, our dependent variable is whether or not a game was a blowout. This is a binary variable taking value 1 if the game met the case 3 criteria, and taking value 0 if a game did not meet the blowout game criteria. Our independent variables are calculated absolute value differentials of various game statistics. These vary by league. For the NFL and NHL, I looked at an dependent variable of whether or not a game was close. 
 
 ### Decision Tree Model 
+
+The first method I use is called classification and regression trees, or CART. This method builds what is called a tree by splitting on the values of the independent variables. To predict the outcome for a new observation or case, you can follow the splits in the tree and at the end, you predict the most frequent outcome in the training set that followed the same path.
+
+Some advantages of CART are that it does not assume a linear model, like logistic regression or linear regression, and it's a very interpretable model.
+
+
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_blowouts_tree.png" alt="alt text" width="640" height="427">
 
@@ -264,7 +269,15 @@ The final variable in our competitiveIndex calculation will be a measure of how 
 
 
 
+
+
+
 ### Logistic Regression Model 
+
+
+
+
+
 
 
 
@@ -286,11 +299,11 @@ To determine the most and least competitive leagues, I calculated a 'Competitive
 
 ![](http://latex.codecogs.com/gif.latex?competitiveIndex%20%3D%20%5Cfrac%7BComebackRate%5C%2C%20&plus;%5C%2C%20CloseGameRate%5C%2C%20&plus;%5C%2C%281%5C%2C%20-%5C%2C%20BlowoutRate%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20SalaryWinCorrelation%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20PredictiveAccuracy%29%20%7D%7B5%7D)
 
-> competitiveIndex is a scale of 0 to 1 
+competitiveIndex is a measure of competitiveness on a scale of 0 to 1 
 
-> ⋅⋅⋅1 being most competitive 
+> 1 being most competitive 
 
-> ⋅⋅⋅0 being least competitive 
+> 0 being least competitive 
 
 
 | League | competitiveIndex |
@@ -300,7 +313,9 @@ To determine the most and least competitive leagues, I calculated a 'Competitive
 | NBA    | 0.38             |
 | MLB    | 0.36             |
 
-And there we have it, the NHL is the most competitive league as its competitiveIndex of 0.51 confirms <a href="http://wpmedia.o.canada.com/2013/12/flames_rangers_hockey_213564240.jpg" target="_blank">hurdles</a> the other leagues. 
+And there we have it, the NHL is the most competitive league with competitiveIndex score of 0.51. The NFL is close behind with a score of 0.49. Anecdotally, these results align with my own ranking of live sporting events to attend. 
+
+Thanks for reading, send me a message with your thoughts. 
 
 
 <strong>Update:</strong>
