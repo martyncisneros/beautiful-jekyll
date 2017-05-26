@@ -244,38 +244,127 @@ The final variable in our competitiveIndex calculation will be a measure of how 
 
 For the NBA and MLB, our dependent variable is whether or not a game was a blowout. This is a binary variable taking value 1 if the game met the case 3 criteria, and taking value 0 if a game did not meet the blowout game criteria. Our independent variables are calculated absolute value differentials of various game statistics. These vary by league. For the NFL and NHL, I looked at a dependent variable of whether or not a game was close. 
 
-### Decision Tree Model 
+#### **_Again, for those interested, the R code used for data wrangling and analysis can be found here for the <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.R" target="_blank">NBA</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.R" target="_blank">NHL</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.R" target="_blank">NFL</a>, and <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.R" target="_blank">MLB</a>._**
+
+### Classification Decision Tree Model 
 
 The first method I use is called classification and regression trees, or CART. This method builds what is called a tree by splitting on the values of the independent variables. To predict the outcome for a new observation or case, you can follow the splits in the tree and at the end, you predict the most frequent outcome in the training set that followed the same path.
 
 Some advantages of CART are that it does not assume a linear model, like logistic regression or linear regression, and it's a very interpretable model.
 
+**NBA** 
+
+I made training and test data sets with variables like DeltaTotalAssists, DeltaFieldGoalPercentage, DeltaTurnovers, DeltaOffensiveRebounds, etc. I will create a CART model to predict blowout games by looking at the differentials from basketball game stats. 
+
 Each node shows
 
-> the predicted outcome (blowout or not),
+> the predicted outcome (blowout = 1 or not a blowout = 0) 
 
-> the predicted probability of a blowout,
+> the predicted probability of a blowout
 
-> the percentage of observations in the node.
+> the percentage of observations in the node
+
+A CART tree is a series of decision rules which attempt to predict an outcome. 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_blowouts_tree.png" alt="alt text" width="640" height="427">
 
+Now let's see how well our CART model does at making predictions for the test set. We can measure the accuracy of the tree model by creating a confusion matrix. 
+
+_NBA Tree Model Accuracy_ = 0.7106798
+
+A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.6412214
+
+Our NBA CART model is better than baseline. Lastly, let's generate an ROC curve to evaulate our model CART model. The Yhat Blog has a good <a href="http://blog.yhat.com/posts/roc-curves.html" target="_blank">post explaing ROC curves</a>. 
+
+Basically..
+
+This is a perfect model: 
+
+![](http://blog.yhat.com/static/img/roc-perfect.png)
+
+This is random guessing: 
+
+![](http://blog.yhat.com/static/img/roc-guessing.png)
+
+We can calculate an AUC (or area under curve) to quantify how good the model is. To make it simple:
+
+> AUC of 1 is good
+
+> AUC of .5 is random guessing
+
+_NBA ROC Curve_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_roc_curve.png" alt="alt text" width="640" height="427">
+
+Now that we have a better idea of a CART model and how to quantify it's significance, I'll quickly run through the results for other leagues..
+
+**MLB** 
+
+Each node shows
+
+> the predicted outcome (blowout = 1 or not a blowout = 0) 
+
+> the predicted probability of a blowout
+
+> the percentage of observations in the node
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLB_blowouts_tree.png" alt="alt text" width="640" height="427">
+
+_MLB Tree Model Accuracy_ = 
+
+A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 
+
+Our MLB CART model is better than baseline. 
+
+_MLB ROC Curve_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLB_roc_curve.png" alt="alt text" width="640" height="427">
+
+**NFL** 
 
 
 Each node shows
 
-> the predicted outcome (close game or not),
+> the predicted outcome (close game = 1 or not a close game = 0) 
 
-> the predicted probability of a close game,
+> the predicted probability of a close game
 
-> the percentage of observations in the node.
+> the percentage of observations in the node
 
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_closegames_tree.png" alt="alt text" width="640" height="427">
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_blowouts_tree.png" alt="alt text" width="640" height="427">
+
+_NFL Tree Model Accuracy_ = 
+
+A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 
+
+Our NFL CART model is better than baseline. 
+
+_NFL ROC Curve_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_roc_curve.png" alt="alt text" width="640" height="427">
 
 
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_closegames_tree.png" alt="alt text" width="640" height="427">
+**NHL** 
+
+Each node shows
+
+> the predicted outcome (close game = 1 or not a close game = 0) 
+
+> the predicted probability of a close game
+
+> the percentage of observations in the node
+
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_blowouts_tree.png" alt="alt text" width="640" height="427">
+
+_NHL Tree Model Accuracy_ = 
+
+A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 
+
+Our NHL CART model is better than baseline. 
+
+_NHL ROC Curve_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_roc_curve.png" alt="alt text" width="640" height="427">
+
+
+
+
 
 
 
