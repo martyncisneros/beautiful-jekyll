@@ -110,10 +110,14 @@ Example Close Game Game:
 
 For our close game example, I chose the <a href="https://streamable.com/t7ac" target="_blank">epic back-n-forth NBA Finals Game 7</a> (aka the undercard to Game of Thrones' <a href="http://www.imdb.com/title/tt4283088/" target="_blank">Battle of the Bastards</a> which aired right after). 
 
+Box Score
+
 | Game                   | Team                  | Q1 | Q2 | Q3 | Q4 | Final |
 |------------------------|-----------------------|----|----|----|----|-------|
 | 2016 NBA Finals Game 7 | Golden State Warriors | 22 | 27 | 27 | 13 | 89    |
 | 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 23 | 19 | 33 | 18 | 93    |
+
+Calculated Game Score Differentials
 
 | Game                   | Team                  | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |------------------------|-----------------------|---------|---------|---------|---------|------------|
@@ -169,10 +173,14 @@ For the Z point threshold to qualify a 'blowout game', I chose three times the m
 
 Example Blowout Game: 
 
+Box Score
+
 | Game              | Team                | Q1 | Q2 | Q3 | Q4 | Final |
 |-------------------|---------------------|----|----|----|----|-------|
 | 2017 NBA Playoffs | Boston Celtics      | 18 | 13 | 26 | 29 | 86    |
 | 2017 NBA Playoffs | Cleveland Cavaliers | 32 | 40 | 31 | 27 | 130   |
+
+Calculated Game Score Differentials
 
 | Game              | Team                | DeltaQ1 | DeltaQ2 | DeltaQ3 | DeltaQ4 | DeltaFinal |
 |-------------------|---------------------|---------|---------|---------|---------|------------|
@@ -203,9 +211,11 @@ The NBA and MLB stand out as most likely to produce blowout games. I average the
 
 ## **Salary Cap**
 
-Salary caps were introduced to the NBA, NHL, and NFL over the last three decades as an effort to place an upper limit on team spending. In place of a salary cap, the MLB implemented a luxury tax which allows teams to go over the threshold, but at a premium. In this part of the analysis, I leverage payroll data to determine the correlation between total wins in a season and a team's payroll for that season. 
+Salary caps were introduced to the NBA, NHL, and NFL over the last three decades with the goal to reduce the competitive imbalance between bigger spending, large market clubs and the lower revenue, smaller market clubs. The NHL and NFL's caps are considered "hard", meaning that they offer relatively few (if any) circumstances under which teams can exceed the salary cap. The NBA feautures a "soft" cap, meaning that there are several significant exceptions that allow teams to exceed the salary cap to sign players. In place of a salary cap, the MLB implemented a luxury tax which allow teams to spend as much as they want on salary, but it penalizes them a percentage of the amount by which they exceed a threshold. 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Salarycapbyleague.png" alt="alt text" width="640" height="427">
+
+I scraped the latest payroll numbers for every team across the four leagues, to determine the correlation between total wins in a season and a team's payroll for that season. We will use these correlations in our own competitiveIndex calculation of parity in sports. 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHLpayrollandwins.png" alt="alt text" width="640" height="427">
 
@@ -223,7 +233,6 @@ Using R's correlation function, I calculated the relationship between wins and s
 - Score of 0.3 means a a weak liner relationship
 - Score of 0 means no relationship
 
-
 | League | SalaryWinCorrelation |
 |--------|----------------------|
 | MLB    | 0.5943053            |
@@ -231,6 +240,7 @@ Using R's correlation function, I calculated the relationship between wins and s
 | NFL    | 0.4083673            |
 | NHL    | 0.3987338            |
 
+Hard cap leagues do have a weaker correlation between salary and wins, good sign for parity in the NFL and NHL. We'll use this correlation later in the final competitiveIndex calculation. 
 
 ## **Predictive Modeling**
 
