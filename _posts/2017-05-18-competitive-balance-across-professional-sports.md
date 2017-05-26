@@ -240,28 +240,31 @@ Hard cap leagues do have a weaker correlation between salary and wins, good sign
 
 ## **Predictive Modeling**
 
+The final variable in our competitiveIndex calculation will be a measure of how predictable the four leagues are. For each league, I chose the most frequent case from above
 
 
-### CART (Classification & Regression Trees) 
+
+
+### Decision Tree Model 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_blowouts_tree.png" alt="alt text" width="640" height="427">
-..commentary> 
+
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLB_blowouts_tree.png" alt="alt text" width="640" height="427">
-..commentary> 
+
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_closegames_tree.png" alt="alt text" width="640" height="427">
-..commentary> 
+
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_closegames_tree.png" alt="alt text" width="640" height="427">
-..commentary> 
-
-
-### Random Forest
 
 
 
-### Logistic Regression
+### Random Forest Model 
+
+
+
+### Logistic Regression Model 
 
 
 
@@ -283,7 +286,11 @@ To determine the most and least competitive leagues, I calculated a 'Competitive
 
 ![](http://latex.codecogs.com/gif.latex?competitiveIndex%20%3D%20%5Cfrac%7BComebackRate%5C%2C%20&plus;%5C%2C%20CloseGameRate%5C%2C%20&plus;%5C%2C%281%5C%2C%20-%5C%2C%20BlowoutRate%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20SalaryWinCorrelation%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20PredictiveAccuracy%29%20%7D%7B5%7D)
 
-competitiveIndex is a scale of 0 to 1. 1 being most competitive and 0 being least competitive. 
+> competitiveIndex is a scale of 0 to 1. 
+
+> - 1 being most competitive 
+
+> - 0 being least competitive 
 
 | League | competitiveIndex |
 |--------|------------------|
