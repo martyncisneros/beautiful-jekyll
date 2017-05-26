@@ -288,9 +288,10 @@ To determine the most and least competitive leagues, I calculated a 'Competitive
 
 > competitiveIndex is a scale of 0 to 1 
 
-> ...1 being most competitive 
+> ⋅⋅⋅1 being most competitive 
 
-> ...0 being least competitive 
+> ⋅⋅⋅0 being least competitive 
+
 
 | League | competitiveIndex |
 |--------|------------------|
