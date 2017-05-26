@@ -21,7 +21,7 @@ I will measure competitiveness by looking at:
 
 In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, to get historical game data and game scores by quarter. I also scraped <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a> for team payroll data. 
 
-> ** The R code used for data wrangling and analysis can be found here for the <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.R" target="_blank">NBA</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.R" target="_blank">NHL</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.R" target="_blank">NFL</a>, and <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.R" target="_blank">MLB</a>. **
+> The R code used for data wrangling and analysis can be found here for the <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.R" target="_blank">NBA</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.R" target="_blank">NHL</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.R" target="_blank">NFL</a>, and <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.R" target="_blank">MLB</a>.
 
 First, in order to measure the likelyhood of comebacks, close games, and blowouts, I used the granular box score data to calculate game score differentials at each quarter/inning/intermission break for all regular season and playoff games since 2015. I then used these score differentials to determine if a game fit one of the categories. 
 
@@ -207,9 +207,13 @@ I scraped the latest payroll numbers for every team across the four leagues, to 
 Using R's correlation function, I calculated the relationship between wins and salary. 
 
 > Score of 1 means perfect linear relationship
+
 > Score of say 0.7 means strong linear relationship
+
 > Score of 0.5 means a moderate linear relationship 
+
 > Score of 0.3 means a a weak liner relationship
+
 > Score of 0 means no relationship
 
 _SalaryWinCorrelation = 0.5943053_
