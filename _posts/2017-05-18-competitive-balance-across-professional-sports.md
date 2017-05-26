@@ -217,14 +217,6 @@ Salary caps were introduced to the NBA, NHL, and NFL over the last three decades
 
 I scraped the latest payroll numbers for every team across the four leagues, to determine the correlation between total wins in a season and a team's payroll for that season. We will use these correlations in our own competitiveIndex calculation of parity in sports. 
 
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHLpayrollandwins.png" alt="alt text" width="640" height="427">
-
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBApayrollandwins.png" alt="alt text" width="640" height="427">
-
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLBpayrollandwins.png" alt="alt text" width="640" height="427">
-
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFLpayrollandwins.png" alt="alt text" width="640" height="427">
-
 Using R's correlation function, I calculated the relationship between wins and salary. 
 
 - Score of 1 means perfect linear relationship
@@ -233,6 +225,20 @@ Using R's correlation function, I calculated the relationship between wins and s
 - Score of 0.3 means a a weak liner relationship
 - Score of 0 means no relationship
 
+_SalaryWinCorrelation = 0.5943053_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLBpayrollandwins.png" alt="alt text" width="640" height="427">
+
+_SalaryWinCorrelation = 0.4561342_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBApayrollandwins.png" alt="alt text" width="640" height="427">
+
+_SalaryWinCorrelation = 0.4083673_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFLpayrollandwins.png" alt="alt text" width="640" height="427">
+
+_SalaryWinCorrelation = 0.3987338_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHLpayrollandwins.png" alt="alt text" width="640" height="427">
+
+Hard cap leagues do have a weaker correlation between salary and wins, good sign for parity in the NFL and NHL. We'll use this correlation later in the final competitiveIndex calculation. 
+
 | League | SalaryWinCorrelation |
 |--------|----------------------|
 | MLB    | 0.5943053            |
@@ -240,7 +246,6 @@ Using R's correlation function, I calculated the relationship between wins and s
 | NFL    | 0.4083673            |
 | NHL    | 0.3987338            |
 
-Hard cap leagues do have a weaker correlation between salary and wins, good sign for parity in the NFL and NHL. We'll use this correlation later in the final competitiveIndex calculation. 
 
 ## **Predictive Modeling**
 
