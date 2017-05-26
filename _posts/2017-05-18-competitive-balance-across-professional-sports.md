@@ -21,7 +21,7 @@ I will measure competitiveness by looking at:
 
 In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, to get historical game data and game scores by quarter. I also scraped <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a> for team payroll data. 
 
-** The R code used for data wrangling and analysis can be found here for the <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.R" target="_blank">NBA</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.R" target="_blank">NHL</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.R" target="_blank">NFL</a>, and <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.R" target="_blank">MLB</a>. **
+> ** The R code used for data wrangling and analysis can be found here for the <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.R" target="_blank">NBA</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.R" target="_blank">NHL</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.R" target="_blank">NFL</a>, and <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.R" target="_blank">MLB</a>. **
 
 First, in order to measure the likelyhood of comebacks, close games, and blowouts, I used the granular box score data to calculate game score differentials at each quarter/inning/intermission break for all regular season and playoff games since 2015. I then used these score differentials to determine if a game fit one of the categories. 
 
@@ -30,13 +30,10 @@ First, in order to measure the likelyhood of comebacks, close games, and blowout
 
 I define comebacks by two cases: 
 
-Case 1: Team is down by X points going into the final quarter and ends up wining the game. 
+> Case 1: Team is down by X points going into the final quarter and ends up wining the game. 
 
-![](http://latex.codecogs.com/gif.latex?IsComebackCase1%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ3%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
+> Case 2: Team is down by X points going into halftime and ends up winning the game. 
 
-Case 2: Team is down by X points going into halftime and ends up winning the game. 
-
-![](http://latex.codecogs.com/gif.latex?IsComebackCase2%20%3D%20%28IF%20%5C%2C%20DeltaScoreQ2%20%5Cleq%20XPts%20%5C%2C%20AND%20%5C%2C%20DeltaScoreFinal%20%3E%201%5C%2C%20THEN%20%5C%2C%20Yes%20%5C%2C%20ELSE%20%5C%2C%20No%29)
 
 To determine an appropiate X point threshold to qualify a 'comeback', I looked at the the average deficit going into the final quarter for a team who ultimately lost the game. 
 
@@ -85,17 +82,12 @@ Overall, the likelyhood of a comeback game is small across the leagues. There ar
 
 I define close games by three cases: 
 
-Case 1: The game is within Y points through each quarter and final score is within Y points (or game goes to OT). 
+> Case 1: The game is within Y points through each quarter and final score is within Y points (or game goes to OT). 
 
-![](http://latex.codecogs.com/gif.latex?IsCloseGameCase1%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ1%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ2%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5D%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+> Case 2: The game is within Y points going into the final quarter and final score is within Y points (or game goes to OT).
 
-Case 2: The game is within Y points going into the final quarter and final score is within Y points (or game goes to OT).
+> Case 3: The final score is within Y points (or game goes to OT).
 
-![](http://latex.codecogs.com/gif.latex?IsCloseGameCase2%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2CAND%5C%2C%20%5BABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5D%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
-
-Case 3: The final score is within Y points (or game goes to OT).
-
-![](http://latex.codecogs.com/gif.latex?IsCloseGameCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%5Cleq%5C%2C%20YPts%5C%2COR%5C%2C%20Overtime%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 For the Y point threshold to qualify a 'close game', I chose the maximum scorable points on one possession. 
 
@@ -150,17 +142,12 @@ The NHL and NFL stand out as most likely to produce close games. I average the c
 
 I define blowouts by three cases: 
 
-Case 1: The game score deficit is greater than Z points through each quarter and final score deficit is greater than Z points. 
+> Case 1: The game score deficit is greater than Z points through each quarter and final score deficit is greater than Z points. 
 
-![](http://latex.codecogs.com/gif.latex?IsBlowoutCase1%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ1%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ2%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2CZPts%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
+> Case 2: The game score deficit is greater than Z points going into the final quarter and final score deficit is greater than Z points. 
 
-Case 2: The game score deficit is greater than Z points going into the final quarter and final score deficit is greater than Z points. 
+> Case 3: The final score deficit is greater than Z points. 
 
-![](http://latex.codecogs.com/gif.latex?IsBlowoutCase2%20%3D%20%28IF%5C%2C%20ABS%28DeltaScoreQ3%29%5C%2C%3E%20%5C%2CZPts%5C%2CAND%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2CZPts%5C%2CTHEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
-
-Case 3: The final score deficit is greater than Z points. 
-
-![](http://latex.codecogs.com/gif.latex?IsBlowoutCase3%20%3D%20%28IF%5C%2C%20ABS%28DeltaFinalScore%29%5C%2C%3E%20%5C%2C%20ZPts%5C%2C%20THEN%5C%2CYes%5C%2CELSE%5C%2CNo%29)
 
 For the Z point threshold to qualify a 'blowout game', I chose three times the maximum scorable points on one possession. 
 
@@ -219,11 +206,11 @@ I scraped the latest payroll numbers for every team across the four leagues, to 
 
 Using R's correlation function, I calculated the relationship between wins and salary. 
 
-- Score of 1 means perfect linear relationship
-- Score of say 0.7 means strong linear relationship
-- Score of 0.5 means a moderate linear relationship 
-- Score of 0.3 means a a weak liner relationship
-- Score of 0 means no relationship
+> Score of 1 means perfect linear relationship
+> Score of say 0.7 means strong linear relationship
+> Score of 0.5 means a moderate linear relationship 
+> Score of 0.3 means a a weak liner relationship
+> Score of 0 means no relationship
 
 _SalaryWinCorrelation = 0.5943053_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLBpayrollandwins.png" alt="alt text" width="640" height="427">
