@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Measuring the Competitive Balance across U.S. Professional Sports Using R
-subtitle: A look at Comebacks, Close Games, Blowouts, and Salary Cap Disparity
+subtitle: A look at Comebacks, Close Games, Blowouts, Payroll Disparity, and Predictability
 bigimg: 
 - "/img/competitive-analysis/sports_header.png" : "© 2013 Stadium Management Company, LLC"
 published: false
 ---
 
-This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most competitive playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. On the other hand, besides what will surely be an exciting National Basketball Association (NBA) finals between the Cleveland Cavaliers and Golden State Warriors (playing for the title for the <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">third straight year</a>), the competitive landscape in the league has suffered in recent years. In Game 2 of the Eastern Conference Finals, the Cavaliers set a playoff record with a <a href="https://streamable.com/kddo0" target="_blank">41 point halftime</a> lead against the Boston Celtics. 
+This past February, the sports world witnessed one of the most improbable comebacks in sports history and it came during the biggest stage. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the National Football League (NFL) Super Bowl. Right now hockey fans are being treated to one of the most entertaining playoffs ever. The National Hockey League's (NHL) 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. On the other hand, the National Basketball Association (NBA) playoffs have been a <a href="https://streamable.com/kddo0" target="_blank">record breaking lopsided affair</a> leading to the inevitable <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">third straight</a> Cavaliers and Golden State Warriors Finals matchup. 
 
-This recent sports drama triggered a question primed for a data-based answer, **which league (NBA, NHL, NFL, or MLB) is the most competitive?** 
+These recent events triggered a question primed for a data-based answer, **which league (NBA, NHL, NFL, or MLB) is the most competitive?** 
 
 I will measure competitiveness by looking at: 
 
@@ -280,7 +280,7 @@ Model Accuracy?
 
 To determine the most and least competitive leagues, I calculated a 'Competitive Index' using the results from the analysis. This index is essentially an average of all values. 
 
-![](http://latex.codecogs.com/gif.latex?competitiveIndex%3D%5Cfrac%7BComebackRate&plus;CloseGameRate&plus;%281-BlowoutRate%29&plus;%281-SalaryWinCorrelation%29%7D%7B4%7D)
+![](http://latex.codecogs.com/gif.latex?competitiveIndex%20%3D%20%5Cfrac%7BComebackRate%5C%2C%20&plus;%5C%2C%20CloseGameRate%5C%2C%20&plus;%5C%2C%281%5C%2C%20-%5C%2C%20BlowoutRate%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20SalaryWinCorrelation%29%5C%2C%20&plus;%5C%2C%20%281%5C%2C%20-%5C%2C%20PredictiveAccuracy%29%20%7D%7B5%7D)
 
 competitiveIndex is a scale of 0 to 1. 1 being most competitive and 0 being least competitive. 
 
@@ -291,7 +291,7 @@ competitiveIndex is a scale of 0 to 1. 1 being most competitive and 0 being leas
 | NBA    | 0.38             |
 | MLB    | 0.36             |
 
-And there we have it, the NFL is the most competitive league as its competitiveIndex of 0.59 <a href="http://thesportsfanjournal.com/wp-content/uploads/2016/10/ezekiel-elliott-e48ce95a24a55fb1.jpg" target="_blank">hurdles</a> the other leagues. 
+And there we have it, the NHL is the most competitive league as its competitiveIndex of 0.51 confirms <a href="http://wpmedia.o.canada.com/2013/12/flames_rangers_hockey_213564240.jpg" target="_blank">hurdles</a> the other leagues. 
 
 
 <strong>Update:</strong>
