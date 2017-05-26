@@ -231,10 +231,10 @@ Using R's correlation function, I calculated the relationship between wins and s
 
 | League | SalaryWinCorrelation |
 |--------|----------------------|
-| MLB    | 0.6059618            |
-| NBA    | 0.6019024            |
-| NHL    | 0.6015134            |
-| NFL    | 0.03972376           |
+| MLB    | 0.5943053            |
+| NBA    | 0.4561342            |
+| NFL    | 0.4083673            |
+| NHL    | 0.3987338            |
 
 
 ## **Predictive Modeling**
@@ -286,10 +286,10 @@ competitiveIndex is a scale of 0 to 1. 1 being most competitive and 0 being leas
 
 | League | competitiveIndex |
 |--------|------------------|
-| NFL    | 0.59             |
-| NHL    | 0.46             |
+| NHL    | 0.51             |
+| NFL    | 0.49             |
+| NBA    | 0.38             |
 | MLB    | 0.36             |
-| NBA    | 0.34             |
 
 And there we have it, the NFL is the most competitive league as its competitiveIndex of 0.59 <a href="http://thesportsfanjournal.com/wp-content/uploads/2016/10/ezekiel-elliott-e48ce95a24a55fb1.jpg" target="_blank">hurdles</a> the other leagues. 
 
