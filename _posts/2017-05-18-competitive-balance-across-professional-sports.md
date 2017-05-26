@@ -23,7 +23,7 @@ In this analysis, I utilized an expansive <a href="http://developers.stattleship
 
 #### **_The R code used for data wrangling and analysis can be found here for the <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.R" target="_blank">NBA</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.R" target="_blank">NHL</a>, <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.R" target="_blank">NFL</a>, and <a href="https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.R" target="_blank">MLB</a>._**
 
-First, in order to measure the likelyhood of comebacks, close games, and blowouts, I used the granular box score data to calculate game score differentials at each quarter/inning/intermission break for all regular season and playoff games since 2015. I then used these score differentials to determine if a game fit one of the categories. 
+First, in order to measure the likelihood of comebacks, close games, and blowouts, I used the granular box score data to calculate game score differentials at each quarter/inning/intermission break for all regular season and playoff games since 2015. I then used these score differentials to determine if a game fit one of the categories. 
 
 
 ## **Comebacks**
@@ -35,7 +35,7 @@ I define comebacks by two cases:
 > Case 2: Team is down by X points going into halftime and ends up winning the game. 
 
 
-To determine an appropiate X point threshold to qualify a 'comeback', I looked at the the average deficit going into the final quarter for a team who ultimately lost the game. 
+To determine an appropriate X point threshold to qualify a 'comeback', I looked at the average deficit going into the final quarter for a team who ultimately lost the game. 
 
 | League | X Threshold |
 |--------|-------------|
@@ -60,7 +60,7 @@ Calculated Game Score Differentials
 | Super Bowl 51 | New England Patriots | 0       | -18     | -19     | 0       | 6          |
 | Super Bowl 51 | Atlanta Falcons      | 0       | 18      | 19      | 0       | -6         |
 
-This game would qualify as both case 1 and case 2 comebacks since the Patriots were down by 18 points at halftime and 19 points going into the 4th but still won the game. Now let's look at the likelyhood of a comeback game across the 4 leagues. 
+This game would qualify as both case 1 and case 2 comebacks since the Patriots were down by 18 points at halftime and 19 points going into the 4th but still won the game. Now let's look at the likelihood of a comeback game across the 4 leagues. 
 
 _Case 1: Down by Xpts going into final quarter and win_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase1.png" alt="alt text" width="640" height="427">
@@ -68,7 +68,7 @@ _Case 1: Down by Xpts going into final quarter and win_
 _Case 2: Down by Xpts going into halftime and win_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Comebackcase2.png" alt="alt text" width="640" height="427">
 
-Overall, the likelyhood of a comeback game is small across the leagues. There aren't any clear signals. I average the comeback game rates for regular season, playoffs, and both cases to arrive at a Global Comeback Rate. We'll use this rate later in the final competitiveIndex calculation. 
+Overall, the likelihood of a comeback game is small across the leagues. There aren't any clear signals. I average the comeback game rates for regular season, playoffs, and both cases to arrive at a Global Comeback Rate. We'll use this rate later in the final competitiveIndex calculation. 
 
 | League | Global Comeback Rate |
 |--------|----------------------|
@@ -116,7 +116,7 @@ Calculated Game Score Differentials
 | 2016 NBA Finals Game 7 | Golden State Warriors | -1      | 7       | 1       | -4      | -4         |
 | 2016 NBA Finals Game 7 | Cleveland Cavaliers   | 1       | -7      | -1      | 4       | 4          |
 
-This game would qualify as both case 2 and case 3 close games since the game score differential going into the final quarter and final score were within 4 points. However, because the halftime score differential was 7 points, I am not qualifying this game as a case 1 close game. Now let's look at the likelyhood of a close game across the 4 leagues. 
+This game would qualify as both case 2 and case 3 close games since the game score differential going into the final quarter and final score were within 4 points. However, because the halftime score differential was 7 points, I am not qualifying this game as a case 1 close game. Now let's look at the likelihood of a close game across the 4 leagues. 
 
 _Case 1: Game is within Y points through each quarter and final score (or OT)_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Closegamecase1.png" alt="alt text" width="640" height="427">
@@ -174,7 +174,7 @@ Calculated Game Score Differentials
 | 2017 NBA Playoffs | Boston Celtics      | -14     | -41     | -46     | -44     | -44        |
 | 2017 NBA Playoffs | Cleveland Cavaliers | 14      | 41      | 46      | 44      | 44         |
 
-This game would qualify as case 1, case 2, and case 3 blowouts since the game differentials are all greater than 12 points..by a mile. Now let's look at the likelyhood of a blowout game across the 4 leagues. 
+This game would qualify as case 1, case 2, and case 3 blowouts since the game differentials are all greater than 12 points..by a mile. Now let's look at the likelihood of a blowout game across the 4 leagues. 
 
 _Case 1: Game score differential is greater than Z points through each quarter and final score_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase1.png" alt="alt text" width="640" height="427">
@@ -198,7 +198,7 @@ The NBA and MLB stand out as most likely to produce blowout games. I average the
 
 ## **Salary Cap**
 
-Salary caps were introduced to the NBA, NHL, and NFL over the last three decades with the goal to reduce the competitive imbalance between bigger spending, large market clubs and the lower revenue, smaller market clubs. The NHL and NFL's caps are considered "hard", meaning that they offer relatively few (if any) circumstances under which teams can exceed the salary cap. The NBA feautures a "soft" cap, meaning that there are several significant exceptions that allow teams to exceed the salary cap to sign players. In place of a salary cap, the MLB implemented a luxury tax which allow teams to spend as much as they want on salary, but it penalizes them a percentage of the amount by which they exceed a threshold. 
+Salary caps were introduced to the NBA, NHL, and NFL over the last three decades with the goal to reduce the competitive imbalance between bigger spending, large market clubs and the lower revenue, smaller market clubs. The NHL and NFL's caps are considered "hard", meaning that they offer relatively few (if any) circumstances under which teams can exceed the salary cap. The NBA features a "soft" cap, meaning that there are several significant exceptions that allow teams to exceed the salary cap to sign players. In place of a salary cap, the MLB implemented a luxury tax, which allow teams to spend as much as they want on salary, but it penalizes them a percentage of the amount by which they exceed a threshold. 
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Salarycapbyleague.png" alt="alt text" width="640" height="427">
 
@@ -208,11 +208,11 @@ Using R's correlation function, I calculated the relationship between wins and s
 
 > Score of 1 means perfect linear relationship
 
-> Score of say 0.7 means strong linear relationship
+> Score of 0.7 means strong linear relationship
 
-> Score of 0.5 means a moderate linear relationship 
+> Score of 0.5 means moderate linear relationship 
 
-> Score of 0.3 means a a weak liner relationship
+> Score of 0.3 means weak linear relationship
 
 > Score of 0 means no relationship
 
@@ -240,9 +240,9 @@ Hard cap leagues do have a weaker correlation between salary and wins, good sign
 
 ## **Predictive Modeling**
 
-The final variable in our competitiveIndex calculation will be a measure of how predictable the four leagues are. In this part of the analysis, I look to predict Case 3 blow outs for the NBA and MLB and Case 3 close games for the NFL and NHL. These were the most likely cases for each league and will provide the largest sample size of game data. 
+The final variable in our competitiveIndex calculation will be a measure of how predictable the four leagues are. In this part of the analysis, I look to predict Case 3 blowouts for the NBA and MLB and Case 3 close games for the NFL and NHL. These were the most likely cases for each league and will provide the largest sample size of game data. 
 
-For the NBA and MLB, our dependent variable is whether or not a game was a blowout. This is a binary variable taking value 1 if the game met the case 3 criteria, and taking value 0 if a game did not meet the blowout game criteria. Our independent variables are calculated absolute value differentials of various game statistics. These vary by league. For the NFL and NHL, I looked at an dependent variable of whether or not a game was close. 
+For the NBA and MLB, our dependent variable is whether or not a game was a blowout. This is a binary variable taking value 1 if the game met the case 3 criteria, and taking value 0 if a game did not meet the blowout game criteria. Our independent variables are calculated absolute value differentials of various game statistics. These vary by league. For the NFL and NHL, I looked at a dependent variable of whether or not a game was close. 
 
 ### Decision Tree Model 
 
