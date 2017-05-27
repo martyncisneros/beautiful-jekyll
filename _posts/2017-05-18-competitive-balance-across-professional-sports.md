@@ -280,11 +280,11 @@ Basically..
 
 This is a perfect model: 
 
-![](http://blog.yhat.com/static/img/roc-perfect.png)
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/roc-perfect.png" alt="alt text" width="640" height="427">
 
 This is random guessing: 
 
-![](http://blog.yhat.com/static/img/roc-guessing.png)
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/roc-guessing.png" alt="alt text" width="640" height="427">
 
 We can calculate an AUC (or area under curve) to quantify how good the model is. To make it simple:
 
