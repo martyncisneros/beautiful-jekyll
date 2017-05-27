@@ -329,7 +329,7 @@ Each node shows:
 
 > the percentage of observations in the node
 
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_blowouts_tree.png" alt="alt text" width="640" height="427">
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_closegames_tree.png" alt="alt text" width="640" height="427">
 
 _NFL Tree Model Accuracy_ = 0.5875
 
@@ -352,7 +352,7 @@ Each node shows:
 
 > the percentage of observations in the node
 
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_blowouts_tree.png" alt="alt text" width="640" height="427">
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_closegames_tree.png" alt="alt text" width="640" height="427">
 
 _NHL Tree Model Accuracy_ = 0.531052
 
