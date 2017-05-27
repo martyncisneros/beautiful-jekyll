@@ -291,6 +291,7 @@ We can calculate an AUC (or area under curve) to quantify how good the model is.
 > AUC of .5 is random guessing
 
 _NBA ROC Curve_
+
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_roc_curve.png" alt="alt text" width="640" height="427">
 
 Now that we have a better idea of a CART model and how to quantify it's significance, I'll quickly run through the results for other leagues..
@@ -314,6 +315,7 @@ A baseline model that always predicts not a blowout, which is the most common ou
 Our MLB CART model is better than baseline. 
 
 _MLB ROC Curve_
+
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLB_roc_curve.png" alt="alt text" width="640" height="427">
 
 **NFL** 
@@ -336,6 +338,7 @@ A baseline model that always predicts not a blowout, which is the most common ou
 Our NFL CART model is better than baseline; however, this model is only slightly better than random guessing. 
 
 _NFL ROC Curve_
+
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFL_roc_curve.png" alt="alt text" width="640" height="427">
 
 
@@ -358,6 +361,7 @@ A baseline model that always predicts not a blowout, which is the most common ou
 Our NHL CART model is slightly worse than baseline. 
 
 _NHL ROC Curve_
+
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_roc_curve.png" alt="alt text" width="640" height="427">
 
 
