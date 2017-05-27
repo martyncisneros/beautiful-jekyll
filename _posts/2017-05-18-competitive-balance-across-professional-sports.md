@@ -333,7 +333,7 @@ Each node shows:
 
 _NFL Tree Model Accuracy_ = 0.5875
 
-A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.4625
+A baseline model that always predicts not a close game, which is the most common outcome, has an accuracy of 0.4625
 
 Our NFL CART model is better than baseline; however, this model is only slightly better than random guessing. 
 
@@ -356,13 +356,15 @@ Each node shows:
 
 _NHL Tree Model Accuracy_ = 0.531052
 
-A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.561052
+A baseline model that always predicts not a close game, which is the most common outcome, has an accuracy of 0.561052
 
-Our NHL CART model is slightly worse than baseline. 
+Our NHL CART model is slightly worse than baseline and only slightly better than random guessing. 
 
 _NHL ROC Curve_
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHL_roc_curve.png" alt="alt text" width="640" height="427">
+
+
 
 
 
@@ -372,9 +374,6 @@ _NHL ROC Curve_
 | NBA    |         0.71         |                        
 | NFL    |         0.58         |                          
 | NHL    |         0.53         |          
-
-
-
 
 
 ### Random Forest Model 
@@ -390,12 +389,12 @@ _NHL ROC Curve_
 
 Model Accuracy? 
 
-| League | Decision Tree | Random Forest | 
-|--------|---------------|---------------|
-| NBA    |     0.71      |               |                     
-| MLB    |               |               |                     
-| NFL    |               |               |                    
-| NHL    |               |               |                     
+| League | Random Forest Model | 
+|--------|---------------------|
+| NBA    |                     |                     
+| MLB    |                     |                     
+| NFL    |                     |                    
+| NHL    |                     |                     
 
 
 
