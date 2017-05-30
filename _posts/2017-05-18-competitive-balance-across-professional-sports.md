@@ -366,11 +366,9 @@ _NHL ROC Curve_
 
 
 
-
-
-| League | Tree Model  Accuracy | 
+| League | CART Model  Accuracy | 
 |--------|----------------------|
-| MLB    |         0.75         |                           
+| MLB    |         0.74         |                           
 | NBA    |         0.71         |                        
 | NFL    |         0.58         |                          
 | NHL    |         0.53         |          
@@ -378,27 +376,18 @@ _NHL ROC Curve_
 
 ### Random Forest Model 
 
+The second method I use is called Random Forest. This method was designed to improve the prediction accuracy of CART and works by building a large number of CART trees. To make a prediction for a new observation, each tree in the forest votes on the outcome and we pick the outcome that receives the majority of the votes. 
 
+Using R's randomForest package, I created a model for each league using the same variables we used for CART. Random Forest model improved the accuracy over the previous CART method. We'll use these accuracy results in the competitiveIndex calculation. 
 
+| League | Random Forest Model Accuracy | 
+|--------|------------------------------|
+| MLB    |              0.75            |                           
+| NBA    |              0.77            |                        
+| NFL    |              0.60            |                          
+| NHL    |              0.60            |    
 
-
-
-
-
-
-
-Model Accuracy? 
-
-| League | Random Forest Model | 
-|--------|---------------------|
-| NBA    |                     |                     
-| MLB    |                     |                     
-| NFL    |                     |                    
-| NHL    |                     |                     
-
-
-
-
+                  
 ## **Conclusion**
 
 To determine the most and least competitive leagues, I calculated a 'Competitive Index' using the results from the analysis. This index is essentially an average of all values. 
@@ -414,12 +403,12 @@ competitiveIndex is a measure of competitiveness on a scale of 0 to 1
 
 | League | competitiveIndex |
 |--------|------------------|
-| NHL    | 0.51             |
-| NFL    | 0.49             |
-| NBA    | 0.38             |
-| MLB    | 0.36             |
+| NHL    | 0.49             |
+| NFL    | 0.47             |
+| NBA    | 0.35             |
+| MLB    | 0.34             |
 
-And there we have it, the NHL is the most competitive league with competitiveIndex score of 0.51. The NFL is close behind with a score of 0.49. Anecdotally, these results align with my own ranking of preferred sporting events to attend. 
+And there we have it, the NHL is the most competitive league with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Anecdotally, these results align with my own ranking of preferred sporting events to attend. 
 
 Thanks for reading, send me a message with your thoughts. 
 
