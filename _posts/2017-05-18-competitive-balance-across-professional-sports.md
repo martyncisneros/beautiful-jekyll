@@ -2,12 +2,13 @@
 layout: post
 title: Measuring the Competitive Balance across U.S. Professional Sports Using R
 subtitle: A look at Comebacks, Close Games, Blowouts, Payroll Disparity, and Predictability
-<!--bigimg: 
-- "/img/competitive-analysis/sports_header.png" : "© 2013 Stadium Management Company, LLC"-->
 bigimg: 
 - "/img/competitive-analysis/sports_header_2.png" : "wallpapercave.com"
 published: true
 ---
+
+<!--bigimg: 
+- "/img/competitive-analysis/sports_header.png" : "© 2013 Stadium Management Company, LLC"-->
 
 This past February, the sports world witnessed one of the most improbable comebacks in sports history. The New England Patriots rallied from a <a href="http://www.nfl.com/videos/nfl-super-bowl/0ap3000000783876/Patriots-wild-comeback-in-114-seconds" target="_blank">28-3 deficit</a> to beat Atlanta Falcons and win the NFL Super Bowl. Right now hockey fans are being treated to one of the most entertaining playoffs ever. The NHL 2017 Stanley Cup Playoffs set a record with <a href="https://www.nhl.com/news/2017-stanley-cup-playoffs-sets-overtime-record/c-289053508" target="_blank">18 overtime games</a>. On the other hand, the NBA Playoffs have drawn some criticism thus far due to the lack of competitiveness. The Warriors went 12-0 against the Western Conference in this year's playoffs with an average margin of victory of 16.3 points, <a href="https://twitter.com/ESPNStatsInfo/status/866865018637299712?ref_src=twsrc%5Etfw&ref_url=http%3A%2F%2Fwww.sacbee.com%2Fsports%2Fnba%2Farticle152077367.html" target="_blank">per ESPN Stats and Info</a>. The Cavaliers won 12 of 13 games against the Eastern Conference, with all four of their wins over the Boston Celtics in the conference finals coming by at least 13 points, including this <a href="https://streamable.com/kddo0" target="_blank">record breaking lopsided affair</a>. The NBA's lack-of-parity playoffs lead to the inevitable <a href="https://fivethirtyeight.com/features/the-cavs-and-warriors-might-be-doing-this-finals-thing-for-a-long-time/" target="_blank">third straight</a> Cavaliers vs. Golden State Warriors Finals matchup. 
 
