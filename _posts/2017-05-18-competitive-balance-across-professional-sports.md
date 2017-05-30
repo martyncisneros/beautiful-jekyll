@@ -182,7 +182,7 @@ This game would qualify as case 1, case 2, and case 3 blowouts since the game di
 _Case 1: Game score differential is greater than Z points through each quarter and final score_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase1.png" alt="alt text" width="640" height="427">
 
-_Case 2: Game score differential is greater than Z points going into the final quarter and final score_
+_Case 2: Game score differential is greater than Z pts into the final quarter and final score_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase2.png" alt="alt text" width="640" height="427">
 
 _Case 3: Game final score differential is greater than Z points_
