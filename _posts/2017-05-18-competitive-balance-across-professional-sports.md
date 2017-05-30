@@ -101,7 +101,7 @@ For the Y point threshold to qualify a 'close game', I chose the maximum scorabl
 | NFL    | 8 points    |
 | MLB    | 1 run       |
 
-Example Close Game Game: 
+Example Close Game: 
 
 For our close game example, I chose the <a href="https://streamable.com/t7ac" target="_blank">epic back-n-forth NBA Finals Game 7</a> (aka the undercard to Game of Thrones' <a href="http://www.imdb.com/title/tt4283088/" target="_blank">Battle of the Bastards</a> which aired right after). 
 
@@ -275,7 +275,7 @@ _NBA Tree Model Accuracy_ = 0.7106798
 
 A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.6412214
 
-Our NBA CART model is better than baseline. Lastly, let's generate an ROC curve to evaulate our model CART model. The Yhat Blog has a good <a href="http://blog.yhat.com/posts/roc-curves.html" target="_blank">post explaing ROC curves</a>. 
+Our NBA CART model is better than baseline. Lastly, let's generate an ROC curve to evaluate our model CART model. The Yhat Blog has a good <a href="http://blog.yhat.com/posts/roc-curves.html" target="_blank">post explaining ROC curves</a>. 
 
 Basically..
 
@@ -297,7 +297,7 @@ _NBA ROC Curve_
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_roc_curve.png" alt="alt text" width="640" height="427">
 
-Now that we have a better idea of a CART model and how to quantify it's significance, I'll quickly run through the results for other leagues..
+Now that we have a better idea of a CART model and how to quantify its significance, I'll quickly run through the results for other leagues..
 
 **MLB** 
 
@@ -411,7 +411,7 @@ This index is essentially an average of all values and a measure of competitiven
 | NBA    | 0.35             |
 | MLB    | 0.34             |
 
-And there we have it, the NHL is the <a href="https://youtu.be/4CMGYetKKP8?t=11s" target="_blank">most competitive league</a> with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Next, I will create an <a href="https://shiny.rstudio.com/gallery/" target="_blank">R Shiny</a> application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
+And there we have it; the NHL is the <a href="https://youtu.be/4CMGYetKKP8?t=11s" target="_blank">most competitive league</a> with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Next, I will create an <a href="https://shiny.rstudio.com/gallery/" target="_blank">R Shiny</a> application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
 
 <strong>Update:</strong>
 
