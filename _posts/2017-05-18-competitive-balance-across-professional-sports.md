@@ -338,7 +338,7 @@ _NFL Tree Model Accuracy_ = 0.5875
 
 A baseline model that always predicts not a close game, which is the most common outcome, has an accuracy of 0.4625
 
-Our NFL CART model is better than baseline; however, this model is only slightly better than random guessing. 
+Our NFL CART model is better than baseline and only slightly better than random guessing. 
 
 _NFL ROC Curve_
 
@@ -411,7 +411,7 @@ This index is essentially an average of all values and a measure of competitiven
 | NBA    | 0.35             |
 | MLB    | 0.34             |
 
-And there we have it, the NHL is the most competitive league with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Thanks for reading, send me a message with your thoughts. 
+And there we have it, the NHL is the most competitive league with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Next, I will create an R Shiny application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
 
 
 <strong>Update:</strong>
