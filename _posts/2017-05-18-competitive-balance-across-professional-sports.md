@@ -411,7 +411,7 @@ This index is essentially an average of all values and a measure of competitiven
 | NBA    | 0.35             |
 | MLB    | 0.34             |
 
-And there we have it, the NHL is the <a href="https://youtu.be/B7yRDw9gMug?t=3s" target="_blank">most competitive league</a> with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Next, I will create an <a href="https://shiny.rstudio.com/gallery/" target="_blank">R Shiny</a> application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
+And there we have it, the NHL is the <a href="https://youtu.be/4CMGYetKKP8?t=11s" target="_blank">most competitive league</a> with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Next, I will create an <a href="https://shiny.rstudio.com/gallery/" target="_blank">R Shiny</a> application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
 
 <strong>Update:</strong>
 
