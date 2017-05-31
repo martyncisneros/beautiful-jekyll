@@ -177,7 +177,7 @@ Calculated Game Score Differentials
 | 2017 NBA Playoffs | Boston Celtics      | -14     | -41     | -46     | -44     | -44        |
 | 2017 NBA Playoffs | Cleveland Cavaliers | 14      | 41      | 46      | 44      | 44         |
 
-This game would qualify as case 1, case 2, and case 3 blowouts since the game differentials are all greater than 12 points..by a mile. Now let's look at the likelihood of a blowout game across the 4 leagues. 
+This game would qualify as case 1, case 2, and case 3 blowouts since the game differentials are all greater than 12 points... by a mile. Now let's look at the likelihood of a blowout game across the 4 leagues. 
 
 _Case 1: Game score differential is greater than Z points through each quarter and final score_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/Blowoutcase1.png" alt="alt text" width="640" height="427">
