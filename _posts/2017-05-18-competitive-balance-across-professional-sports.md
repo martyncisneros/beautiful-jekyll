@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measuring the Competitive Balance across U.S. Professional Sports Using R
+title: Measuring the Competitive Balance across US Professional Sports Using R
 subtitle: A look at Comebacks, Close Games, Blowouts, Payroll Disparity, and Predictability
 bigimg: 
 - "/img/competitive-analysis/sports_header_2.png" : "wallpapercave.com"
