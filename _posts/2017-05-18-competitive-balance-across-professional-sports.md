@@ -14,7 +14,7 @@ This past February, the sports world witnessed one of the most improbable comeba
 
 These recent events triggered a question primed for a data-based answer, **which league (NBA, NHL, NFL, or MLB) is the most competitive?** 
 
-I will measure competitiveness by looking at: 
+I measured competitiveness by looking at: 
 
 -  Which league is most likely to produce a comeback game? 
 -  Which league is most likely to produce a close game? 
@@ -249,6 +249,7 @@ For the NBA and MLB, our dependent variable is whether or not a game was a blowo
 
 #### **_Again, for those interested, the R code used for data wrangling and analysis can be found here for the <a href="http://htmlpreview.github.io/?https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NBA.html" target="_blank">NBA</a>, <a href="http://htmlpreview.github.io/?https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NHL.html" target="_blank">NHL</a>, <a href="http://htmlpreview.github.io/?https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_NFL.html" target="_blank">NFL</a>, and <a href="http://htmlpreview.github.io/?https://github.com/martyncisneros/sports_competitive_analysis/blob/master/Competitive_Analysis_MLB.html" target="_blank">MLB</a>._**
 
+
 ### Classification Decision Tree Model 
 
 The first method I use is called classification and regression trees, or CART. This method builds what is called a tree by splitting on the values of the independent variables. To predict the outcome for a new observation or case, you can follow the splits in the tree and at the end, you predict the most frequent outcome in the training set that followed the same path.
@@ -257,7 +258,7 @@ Some advantages of CART are that it does not assume a linear model, like linear 
 
 **NBA** 
 
-I made training and test data sets with variables like DeltaTotalAssists, DeltaFieldGoalPercentage, DeltaTurnovers, DeltaOffensiveRebounds, etc. I will create a CART model to predict blowout games by looking at the differentials from these and other basketball game stats. 
+I made training and test data sets with variables like DeltaTotalAssists, DeltaFieldGoalPercentage, DeltaTurnovers, DeltaOffensiveRebounds, etc. I then created a CART model to predict blowout games by looking at the differentials from these and other basketball game stats. 
 
 Each node (or leaf) shows:
 
@@ -269,13 +270,11 @@ Each node (or leaf) shows:
 
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBA_blowouts_tree.png" alt="alt text" width="640" height="427">
 
-Now let's see how well our CART model does at making predictions for the test set. We can measure the accuracy of the tree model by creating a confusion matrix. 
+Now let's see how well our CART model did at making predictions for the test set. We can measure the accuracy of the tree model by creating a confusion matrix. 
 
 _NBA Tree Model Accuracy_ = 0.7106798
 
-A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.6412214
-
-Our NBA CART model is better than baseline. Lastly, let's generate an ROC curve to evaluate our model CART model. The Yhat Blog has a good <a href="http://blog.yhat.com/posts/roc-curves.html" target="_blank">post explaining ROC curves</a>. 
+A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.6412214. Our NBA CART model is better than baseline. Lastly, let's generate an ROC curve to evaluate our CART model. The Yhat Blog has a good <a href="http://blog.yhat.com/posts/roc-curves.html" target="_blank">post explaining ROC curves</a>. 
 
 Basically..
 
@@ -313,9 +312,7 @@ Each node shows:
 
 _MLB Tree Model Accuracy_ = 0.7455219
 
-A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.6213712
-
-Our MLB CART model is better than baseline. 
+A baseline model that always predicts not a blowout, which is the most common outcome, has an accuracy of 0.6213712. Our MLB CART model is better than baseline. 
 
 _MLB ROC Curve_
 
@@ -336,9 +333,7 @@ Each node shows:
 
 _NFL Tree Model Accuracy_ = 0.5875
 
-A baseline model that always predicts not a close game, which is the most common outcome, has an accuracy of 0.4625
-
-Our NFL CART model is better than baseline and only slightly better than random guessing. 
+A baseline model that always predicts not a close game, which is the most common outcome, has an accuracy of 0.4625. Our NFL CART model is better than baseline but only slightly better than random guessing. 
 
 _NFL ROC Curve_
 
@@ -359,9 +354,7 @@ Each node shows:
 
 _NHL Tree Model Accuracy_ = 0.531052
 
-A baseline model that always predicts not a close game, which is the most common outcome, has an accuracy of 0.561052
-
-Our NHL CART model is slightly worse than baseline and only slightly better than random guessing. 
+A baseline model that always predicts not a close game, which is the most common outcome, has an accuracy of 0.561052. Our NHL CART model is slightly worse than baseline and only slightly better than random guessing. 
 
 _NHL ROC Curve_
 
