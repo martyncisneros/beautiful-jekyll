@@ -14,7 +14,7 @@ This past February, the sports world witnessed one of the most improbable comeba
 
 These recent events triggered a question primed for a data-based answer, **which league (NBA, NHL, NFL, or MLB) is the most competitive?** 
 
-I measured competitiveness by looking at: 
+In this post, I propose an empirical method for comparing competitiveness across leagues. I measured competitiveness by looking at: 
 
 -  Which league is most likely to produce a comeback game? 
 -  Which league is most likely to produce a close game? 
