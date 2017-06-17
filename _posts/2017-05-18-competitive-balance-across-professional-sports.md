@@ -22,7 +22,7 @@ In this post, I propose an empirical method for comparing competitiveness across
 -  [Which league has the most linear relationship between wins and payroll?](#payroll) 
 -  [Which league is the most predictable?](#predictability) 
 
-Click [here](#conclusion) to jump to final competitiveIndex calculation. 
+Click [here](#conclusion) to the jump to final competitiveIndex calculation. 
 
 In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, to get historical game data and game scores by quarter. I also scraped <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a> for team payroll data. 
 
@@ -411,4 +411,5 @@ And there we have it; the NHL is the <a href="https://youtu.be/4CMGYetKKP8?t=11s
 <strong>Update:</strong>
 
 <strong>May 31st, 2017: This post has been updated with the latest NBA and NHL 2017 playoff outcomes.</strong>
+<strong>June 13th, 2017: This post has been updated with the conclusion of both NBA and NHL 2017 finals.</strong>
 
