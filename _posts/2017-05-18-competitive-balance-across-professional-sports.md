@@ -16,7 +16,7 @@ These recent events triggered a question primed for a data-based answer, **which
 
 In this post, I propose an empirical method for comparing competitiveness across leagues. I measured competitiveness by looking at: 
 
--  [Which league is most likely to produce a comeback game?](## **Comebacks**) 
+-  [Which league is most likely to produce a comeback game?](#comebacks)
 -  Which league is most likely to produce a close game? 
 -  Which league is most likely to produce a blowout game? 
 -  Which league has the most linear relationship between wins and payroll?
@@ -29,7 +29,7 @@ In this analysis, I utilized an expansive <a href="http://developers.stattleship
 First, in order to measure the likelihood of comebacks, close games, and blowouts, I used the granular box score data to calculate game score differentials at each quarter/inning/intermission break for all regular season and playoff games since 2015. I then used these score differentials to determine if a game fit one of the categories. 
 
 
-## **Comebacks**
+## **Comebacks** <a name="comebacks"></a>
 
 I define comebacks by two cases: 
 
