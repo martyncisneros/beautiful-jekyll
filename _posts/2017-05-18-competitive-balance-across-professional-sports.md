@@ -380,8 +380,8 @@ Using R's randomForest package, I created a model for each league using the same
 
 | League | Random Forest Model Accuracy | 
 |--------|------------------------------|
-| MLB    |              0.75            |                           
-| NBA    |              0.77            |                        
+| NBA    |              0.77            |   
+| MLB    |              0.75            |                                                
 | NFL    |              0.60            |                          
 | NHL    |              0.60            |    
 
