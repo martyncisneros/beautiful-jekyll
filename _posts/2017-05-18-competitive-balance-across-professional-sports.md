@@ -17,10 +17,10 @@ These recent events triggered a question primed for a data-based answer, **which
 In this post, I propose an empirical method for comparing competitiveness across leagues. I measured competitiveness by looking at: 
 
 -  [Which league is most likely to produce a comeback game?](#comebacks)
--  Which league is most likely to produce a close game? 
--  Which league is most likely to produce a blowout game? 
--  Which league has the most linear relationship between wins and payroll?
--  Which league is the most predictable? 
+-  [Which league is most likely to produce a close game?](#closegame) 
+-  [Which league is most likely to produce a blowout game?](#blowout) 
+-  [Which league has the most linear relationship between wins and payroll?](#payroll) 
+-  [Which league is the most predictable?](#predicatbility) 
 
 In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, to get historical game data and game scores by quarter. I also scraped <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a> for team payroll data. 
 
@@ -81,7 +81,7 @@ Overall, the likelihood of a comeback game is small across the leagues. There ar
 | NHL    | 5.6%                 |
 
 
-## **Close Games**
+## **Close Games** <a name="closegame"></a>
 
 I define close games by three cases: 
 
@@ -141,7 +141,7 @@ The NHL and NFL stand out as most likely to produce close games. I average the c
 | NBA    | 12.5%                  |
 
 
-## **Blow Outs**
+## **Blow Outs** <a name="blowout"></a>
 
 I define blowouts by three cases: 
 
@@ -199,7 +199,7 @@ The NBA and MLB stand out as most likely to produce blowout games. I average the
 | NHL    | 4.9%                |
 
 
-## **Salary Cap**
+## **Salary Cap** <a name="payroll"></a>
 
 Salary caps were introduced to the NBA, NHL, and NFL over the last three decades with the goal to reduce the competitive imbalance between bigger spending, large market clubs and the lower revenue, smaller market clubs. The NHL and NFL's caps are considered "hard", meaning that they offer relatively few (if any) circumstances under which teams can exceed the salary cap. The NBA features a "soft" cap, meaning that there are several significant exceptions that allow teams to exceed the salary cap to sign players. In place of a salary cap, the MLB implemented a luxury tax, which allow teams to spend as much as they want on salary, but it penalizes them a percentage of the amount by which they exceed a threshold. 
 
@@ -241,7 +241,7 @@ Hard cap leagues do have a weaker correlation between salary and wins, good sign
 | NHL    | 0.3987338            |
 
 
-## **Predictive Modeling**
+## **Predictive Modeling** <a name="predictability"></a>
 
 The final variable in our competitiveIndex calculation will be a measure of predictability across the leagues. In this part of the analysis, I look to predict Case 3 blowouts for the NBA and MLB and Case 3 close games for the NFL and NHL. These were the most likely cases for each league and will provide the largest sample size of game data. 
 
