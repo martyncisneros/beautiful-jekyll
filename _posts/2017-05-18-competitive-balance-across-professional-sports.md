@@ -227,11 +227,11 @@ _SalaryWinCorrelation = 0.7262808_
 _SalaryWinCorrelation = 0.5943053_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLBpayrollandwins.png" alt="alt text" width="640" height="427">
 
+_SalaryWinCorrelation = 0.4539921_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHLpayrollandwins.png" alt="alt text" width="640" height="427">
+
 _SalaryWinCorrelation = 0.4083673_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFLpayrollandwins.png" alt="alt text" width="640" height="427">
-
-_SalaryWinCorrelation = 0.3987338_
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NHLpayrollandwins.png" alt="alt text" width="640" height="427">
 
 Hard cap leagues do have a weaker correlation between salary and wins, good sign for parity in the NFL and NHL. We'll use this correlation later in the final competitiveIndex calculation. 
 
@@ -239,8 +239,8 @@ Hard cap leagues do have a weaker correlation between salary and wins, good sign
 |--------|----------------------|
 | NBA    | 0.7262808            |
 | MLB    | 0.5943053            |
+| NHL    | 0.4539921            |
 | NFL    | 0.4083673            |
-| NHL    | 0.3987338            |
 
 
 ## **Predictive Modeling** <a name="predictability"></a>
@@ -406,7 +406,7 @@ This index is essentially an average of all values and a measure of competitiven
 | MLB    | 0.34             |
 | NBA    | 0.29             |
 
-And there we have it; the NHL is the <a href="https://youtu.be/4CMGYetKKP8?t=11s" target="_blank">most competitive league</a> with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Next, I will create an <a href="https://shiny.rstudio.com/gallery/" target="_blank">R Shiny</a> application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
+And there we have it; the NHL is the <a href="https://youtu.be/4CMGYetKKP8?t=11s" target="_blank">most competitive league</a> with competitiveIndex score of 0.48. The NFL is close behind with a score of 0.47. Next, I will create an <a href="https://shiny.rstudio.com/gallery/" target="_blank">R Shiny</a> application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
 
 <strong>Update:</strong>
 
