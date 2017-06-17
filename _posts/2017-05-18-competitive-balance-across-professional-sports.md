@@ -221,11 +221,11 @@ Using R's correlation function, I calculated the relationship between wins and s
 
 > Score of 0 means no relationship
 
+_SalaryWinCorrelation = 0.7262808_
+<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBApayrollandwins.png" alt="alt text" width="640" height="427">
+
 _SalaryWinCorrelation = 0.5943053_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/MLBpayrollandwins.png" alt="alt text" width="640" height="427">
-
-_SalaryWinCorrelation = 0.4561342_
-<img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NBApayrollandwins.png" alt="alt text" width="640" height="427">
 
 _SalaryWinCorrelation = 0.4083673_
 <img src="https://raw.githubusercontent.com/martyncisneros/martyncisneros.github.io/master/img/competitive-analysis/NFLpayrollandwins.png" alt="alt text" width="640" height="427">
@@ -237,8 +237,8 @@ Hard cap leagues do have a weaker correlation between salary and wins, good sign
 
 | League | SalaryWinCorrelation |
 |--------|----------------------|
+| NBA    | 0.7262808            |
 | MLB    | 0.5943053            |
-| NBA    | 0.4561342            |
 | NFL    | 0.4083673            |
 | NHL    | 0.3987338            |
 
@@ -401,15 +401,16 @@ This index is essentially an average of all values and a measure of competitiven
 
 | League | competitiveIndex |
 |--------|------------------|
-| NHL    | 0.49             |
+| NHL    | 0.48             |
 | NFL    | 0.47             |
-| NBA    | 0.35             |
 | MLB    | 0.34             |
+| NBA    | 0.29             |
 
 And there we have it; the NHL is the <a href="https://youtu.be/4CMGYetKKP8?t=11s" target="_blank">most competitive league</a> with competitiveIndex score of 0.49. The NFL is close behind with a score of 0.47. Next, I will create an <a href="https://shiny.rstudio.com/gallery/" target="_blank">R Shiny</a> application that will allow us to manipulate the point thresholds for the various categories. For now, thanks for reading and be sure to send me a message with your thoughts. 
 
 <strong>Update:</strong>
 
 <strong>May 31st, 2017: This post has been updated with the latest NBA and NHL 2017 playoff outcomes.</strong>
+
 <strong>June 13th, 2017: This post has been updated with the conclusion of both NBA and NHL 2017 finals.</strong>
 
