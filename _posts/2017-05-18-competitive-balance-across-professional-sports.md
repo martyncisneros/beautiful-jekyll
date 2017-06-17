@@ -16,7 +16,7 @@ These recent events triggered a question primed for a data-based answer, **which
 
 In this post, I propose an empirical method for comparing competitiveness across leagues. I measured competitiveness by looking at: 
 
--  Which league is most likely to produce a comeback game? 
+-  [Which league is most likely to produce a comeback game?](## **Comebacks**) 
 -  Which league is most likely to produce a close game? 
 -  Which league is most likely to produce a blowout game? 
 -  Which league has the most linear relationship between wins and payroll?
