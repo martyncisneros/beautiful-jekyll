@@ -20,7 +20,9 @@ In this post, I propose an empirical method for comparing competitiveness across
 -  [Which league is most likely to produce a close game?](#closegame) 
 -  [Which league is most likely to produce a blowout game?](#blowout) 
 -  [Which league has the most linear relationship between wins and payroll?](#payroll) 
--  [Which league is the most predictable?](#predicatbility) 
+-  [Which league is the most predictable?](#predictability) 
+
+Click [here](#conclusion) to jump to final competitiveIndex calculation. 
 
 In this analysis, I utilized an expansive <a href="http://developers.stattleship.com/" target="_blank">sports data API</a>, powered by <a href="https://www.stattleship.com/" target="_blank">Stattleship</a>, to get historical game data and game scores by quarter. I also scraped <a href="http://www.sports-reference.com/" target="_blank">Sports Reference</a> for team payroll data. 
 
@@ -384,7 +386,7 @@ Using R's randomForest package, I created a model for each league using the same
 | NHL    |              0.60            |    
 
                   
-## **Conclusion**
+## **Conclusion** <a name="conclusion"></a>
 
 To determine the most and least competitive leagues, I calculated a 'Competitive Index' using the results from the analysis.
 
